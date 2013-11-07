@@ -1,6 +1,7 @@
 @N: MF248 |Running in 64-bit mode.
 @N: MF667 |Clock conversion disabled 
-@N: BN115 :"n:\373\controller\component\work\controller_mss\controller_mss.v":296:37:296:45|Removing instance controller_MSS_0.MSS_CCC_0 of view:work.controller_MSS_tmp_MSS_CCC_0_MSS_CCC(verilog) because there are no references to its outputs 
+@N: MF238 :"n:\373\controller\hdl\controller.v":44:12:44:21|Found 9-bit incrementor, 'count_2[8:0]'
+@N: FP130 |Promoting Net contCLK_c on CLKINT  controller_interface_0.c1.divCLK_inferred_clock 
 @N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
 @N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
 @N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.

@@ -1,0 +1,489 @@
+Timing Report Max Delay Analysis
+
+SmartTime Version v11.0
+Microsemi Corporation - Actel Designer Software Release v11.0 (Version 11.0.0.23)
+Copyright (c) 1989-2013
+Date: Thu Nov 07 14:50:41 2013
+
+
+Design: controller
+Family: SmartFusion
+Die: A2F200M3F
+Package: 484 FBGA
+Temperature: COM
+Voltage: COM
+Speed Grade: -1
+Design State: Post-Layout
+Data source: Silicon verified
+Min Operating Condition: BEST
+Max Operating Condition: WORST
+Using Enhanced Min Delay Analysis
+Scenario for Timing Analysis: Primary
+
+
+-----------------------------------------------------
+SUMMARY
+
+Clock Domain:               mss_ccc_gla1
+Period (ns):                4.566
+Frequency (MHz):            219.010
+Required Period (ns):       10.000
+Required Frequency (MHz):   100.000
+External Setup (ns):        N/A
+External Hold (ns):         N/A
+Min Clock-To-Out (ns):      6.786
+Max Clock-To-Out (ns):      11.290
+
+Clock Domain:               controller_MSS_0/MSS_CCC_0/I_RCOSC:CLKOUT
+Period (ns):                N/A
+Frequency (MHz):            N/A
+Required Period (ns):       10.000
+Required Frequency (MHz):   100.000
+External Setup (ns):        N/A
+External Hold (ns):         N/A
+Min Clock-To-Out (ns):      N/A
+Max Clock-To-Out (ns):      N/A
+
+Clock Domain:               controller_interface_0/c1/divCLK:Q
+Period (ns):                1.875
+Frequency (MHz):            533.333
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+External Setup (ns):        N/A
+External Hold (ns):         N/A
+Min Clock-To-Out (ns):      3.422
+Max Clock-To-Out (ns):      6.976
+
+                            Input to Output
+Min Delay (ns):             N/A
+Max Delay (ns):             N/A
+
+END SUMMARY
+-----------------------------------------------------
+
+Clock Domain mss_ccc_gla1
+
+SET Register to Register
+
+Path 1
+  From:                        controller_interface_0/c1/count[2]:CLK
+  To:                          controller_interface_0/c1/count[7]:D
+  Delay (ns):                  4.147
+  Slack (ns):                  5.434
+  Arrival (ns):                9.294
+  Required (ns):               14.728
+  Setup (ns):                  0.409
+  Minimum Period (ns):         4.566
+
+Path 2
+  From:                        controller_interface_0/c1/count[2]:CLK
+  To:                          controller_interface_0/c1/count[8]:D
+  Delay (ns):                  4.105
+  Slack (ns):                  5.476
+  Arrival (ns):                9.252
+  Required (ns):               14.728
+  Setup (ns):                  0.409
+  Minimum Period (ns):         4.524
+
+Path 3
+  From:                        controller_interface_0/c1/count[3]:CLK
+  To:                          controller_interface_0/c1/count[8]:D
+  Delay (ns):                  4.096
+  Slack (ns):                  5.502
+  Arrival (ns):                9.226
+  Required (ns):               14.728
+  Setup (ns):                  0.409
+  Minimum Period (ns):         4.498
+
+Path 4
+  From:                        controller_interface_0/c1/count[5]:CLK
+  To:                          controller_interface_0/c1/count[8]:D
+  Delay (ns):                  4.072
+  Slack (ns):                  5.509
+  Arrival (ns):                9.219
+  Required (ns):               14.728
+  Setup (ns):                  0.409
+  Minimum Period (ns):         4.491
+
+Path 5
+  From:                        controller_interface_0/c1/count[7]:CLK
+  To:                          controller_interface_0/c1/count[8]:D
+  Delay (ns):                  4.054
+  Slack (ns):                  5.537
+  Arrival (ns):                9.191
+  Required (ns):               14.728
+  Setup (ns):                  0.409
+  Minimum Period (ns):         4.463
+
+
+Expanded Path 1
+  From: controller_interface_0/c1/count[2]:CLK
+  To: controller_interface_0/c1/count[7]:D
+  data required time                             14.728
+  data arrival time                          -   9.294
+  slack                                          5.434
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        mss_ccc_gla1
+               +     0.000          Clock source
+  0.000                        controller_MSS_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLA (r)
+               +     4.630          Clock generation
+  4.630
+               +     0.000          net: controller_MSS_0/MSS_CCC_0/I_MSSCCC/GLA_INT
+  4.630                        controller_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
+               +     0.000          cell: ADLIB:MSS_CCC_GL_IF
+  4.630                        controller_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
+               +     0.517          net: FAB_CLK
+  5.147                        controller_interface_0/c1/count[2]:CLK (r)
+               +     0.559          cell: ADLIB:DFN1
+  5.706                        controller_interface_0/c1/count[2]:Q (f)
+               +     0.574          net: controller_interface_0/c1/count[2]
+  6.280                        controller_interface_0/c1/count_2_I_10:C (f)
+               +     0.517          cell: ADLIB:AND3
+  6.797                        controller_interface_0/c1/count_2_I_10:Y (f)
+               +     0.736          net: controller_interface_0/c1/DWACT_FINC_E[0]
+  7.533                        controller_interface_0/c1/count_2_I_19:A (f)
+               +     0.352          cell: ADLIB:AND3
+  7.885                        controller_interface_0/c1/count_2_I_19:Y (f)
+               +     0.237          net: controller_interface_0/c1/N_3
+  8.122                        controller_interface_0/c1/count_2_I_20:A (f)
+               +     0.370          cell: ADLIB:XOR2
+  8.492                        controller_interface_0/c1/count_2_I_20:Y (r)
+               +     0.245          net: controller_interface_0/c1/count_2[7]
+  8.737                        controller_interface_0/c1/count_RNO[7]:C (r)
+               +     0.302          cell: ADLIB:OA1
+  9.039                        controller_interface_0/c1/count_RNO[7]:Y (r)
+               +     0.255          net: controller_interface_0/c1/count_4[7]
+  9.294                        controller_interface_0/c1/count[7]:D (r)
+                                    
+  9.294                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  10.000                       mss_ccc_gla1
+               +     0.000          Clock source
+  10.000                       controller_MSS_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLA (r)
+               +     4.630          Clock generation
+  14.630
+               +     0.000          net: controller_MSS_0/MSS_CCC_0/I_MSSCCC/GLA_INT
+  14.630                       controller_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
+               +     0.000          cell: ADLIB:MSS_CCC_GL_IF
+  14.630                       controller_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
+               +     0.507          net: FAB_CLK
+  15.137                       controller_interface_0/c1/count[7]:CLK (r)
+               -     0.409          Library setup time: ADLIB:DFN1
+  14.728                       controller_interface_0/c1/count[7]:D
+                                    
+  14.728                       data required time
+
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+Path 1
+  From:                        controller_interface_0/c1/divCLK:CLK
+  To:                          contCLK
+  Delay (ns):                  6.160
+  Slack (ns):
+  Arrival (ns):                11.290
+  Required (ns):
+  Clock to Out (ns):           11.290
+
+
+Expanded Path 1
+  From: controller_interface_0/c1/divCLK:CLK
+  To: contCLK
+  data required time                             N/C
+  data arrival time                          -   11.290
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        mss_ccc_gla1
+               +     0.000          Clock source
+  0.000                        controller_MSS_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLA (r)
+               +     4.630          Clock generation
+  4.630
+               +     0.000          net: controller_MSS_0/MSS_CCC_0/I_MSSCCC/GLA_INT
+  4.630                        controller_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
+               +     0.000          cell: ADLIB:MSS_CCC_GL_IF
+  4.630                        controller_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
+               +     0.500          net: FAB_CLK
+  5.130                        controller_interface_0/c1/divCLK:CLK (r)
+               +     0.559          cell: ADLIB:DFN1
+  5.689                        controller_interface_0/c1/divCLK:Q (f)
+               +     1.103          net: controller_interface_0/c1/divCLK_i
+  6.792                        controller_interface_0/c1/divCLK_RNIGEL5/U_CLKSRC:A (f)
+               +     0.695          cell: ADLIB:CLKSRC
+  7.487                        controller_interface_0/c1/divCLK_RNIGEL5/U_CLKSRC:Y (f)
+               +     0.495          net: contCLK_c
+  7.982                        contCLK_pad/U0/U1:D (f)
+               +     0.500          cell: ADLIB:IOTRI_OB_EB
+  8.482                        contCLK_pad/U0/U1:DOUT (f)
+               +     0.000          net: contCLK_pad/U0/NET1
+  8.482                        contCLK_pad/U0/U0:D (f)
+               +     2.808          cell: ADLIB:IOPAD_TRI
+  11.290                       contCLK_pad/U0/U0:PAD (f)
+               +     0.000          net: contCLK
+  11.290                       contCLK (f)
+                                    
+  11.290                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          mss_ccc_gla1
+               +     0.000          Clock source
+  N/C                          controller_MSS_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLA (r)
+               +     4.630          Clock generation
+  N/C
+                                    
+  N/C                          contCLK (f)
+
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain controller_MSS_0/MSS_CCC_0/I_RCOSC:CLKOUT
+
+SET Register to Register
+
+No Path
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain controller_interface_0/c1/divCLK:Q
+
+SET Register to Register
+
+Path 1
+  From:                        controller_interface_0/write:CLK
+  To:                          controller_interface_0/write:D
+  Delay (ns):                  1.466
+  Slack (ns):
+  Arrival (ns):                3.689
+  Required (ns):
+  Setup (ns):                  0.409
+  Minimum Period (ns):         1.875
+
+
+Expanded Path 1
+  From: controller_interface_0/write:CLK
+  To: controller_interface_0/write:D
+  data required time                             N/C
+  data arrival time                          -   3.689
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        controller_interface_0/c1/divCLK:Q
+               +     0.000          Clock source
+  0.000                        controller_interface_0/c1/divCLK:Q (r)
+               +     1.049          net: controller_interface_0/c1/divCLK_i
+  1.049                        controller_interface_0/c1/divCLK_RNIGEL5/U_CLKSRC:A (r)
+               +     0.691          cell: ADLIB:CLKSRC
+  1.740                        controller_interface_0/c1/divCLK_RNIGEL5/U_CLKSRC:Y (r)
+               +     0.483          net: contCLK_c
+  2.223                        controller_interface_0/write:CLK (r)
+               +     0.559          cell: ADLIB:DFN1
+  2.782                        controller_interface_0/write:Q (f)
+               +     0.245          net: contWrite_c
+  3.027                        controller_interface_0/write_RNO:A (f)
+               +     0.407          cell: ADLIB:INV
+  3.434                        controller_interface_0/write_RNO:Y (r)
+               +     0.255          net: controller_interface_0/contWrite_c_i
+  3.689                        controller_interface_0/write:D (r)
+                                    
+  3.689                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          controller_interface_0/c1/divCLK:Q
+               +     0.000          Clock source
+  N/C                          controller_interface_0/c1/divCLK:Q (r)
+               +     1.049          net: controller_interface_0/c1/divCLK_i
+  N/C                          controller_interface_0/c1/divCLK_RNIGEL5/U_CLKSRC:A (r)
+               +     0.691          cell: ADLIB:CLKSRC
+  N/C                          controller_interface_0/c1/divCLK_RNIGEL5/U_CLKSRC:Y (r)
+               +     0.483          net: contCLK_c
+  N/C                          controller_interface_0/write:CLK (r)
+               -     0.409          Library setup time: ADLIB:DFN1
+  N/C                          controller_interface_0/write:D
+
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+Path 1
+  From:                        controller_interface_0/write:CLK
+  To:                          contWrite
+  Delay (ns):                  4.753
+  Slack (ns):
+  Arrival (ns):                6.976
+  Required (ns):
+  Clock to Out (ns):           6.976
+
+
+Expanded Path 1
+  From: controller_interface_0/write:CLK
+  To: contWrite
+  data required time                             N/C
+  data arrival time                          -   6.976
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        controller_interface_0/c1/divCLK:Q
+               +     0.000          Clock source
+  0.000                        controller_interface_0/c1/divCLK:Q (r)
+               +     1.049          net: controller_interface_0/c1/divCLK_i
+  1.049                        controller_interface_0/c1/divCLK_RNIGEL5/U_CLKSRC:A (r)
+               +     0.691          cell: ADLIB:CLKSRC
+  1.740                        controller_interface_0/c1/divCLK_RNIGEL5/U_CLKSRC:Y (r)
+               +     0.483          net: contCLK_c
+  2.223                        controller_interface_0/write:CLK (r)
+               +     0.559          cell: ADLIB:DFN1
+  2.782                        controller_interface_0/write:Q (f)
+               +     0.944          net: contWrite_c
+  3.726                        contWrite_pad/U0/U1:D (f)
+               +     0.442          cell: ADLIB:IOTRI_OB_EB
+  4.168                        contWrite_pad/U0/U1:DOUT (f)
+               +     0.000          net: contWrite_pad/U0/NET1
+  4.168                        contWrite_pad/U0/U0:D (f)
+               +     2.808          cell: ADLIB:IOPAD_TRI
+  6.976                        contWrite_pad/U0/U0:PAD (f)
+               +     0.000          net: contWrite
+  6.976                        contWrite (f)
+                                    
+  6.976                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          controller_interface_0/c1/divCLK:Q
+               +     0.000          Clock source
+  N/C                          controller_interface_0/c1/divCLK:Q (r)
+                                    
+  N/C                          contWrite (f)
+
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Path set Pin to Pin
+
+SET Input to Output
+
+No Path
+
+END SET Input to Output
+
+----------------------------------------------------
+
+Path set User Sets
+

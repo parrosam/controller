@@ -5,51 +5,51 @@
 #CUR:"C:\\Microsemi\\Libero_v11.0\\Synopsys\\synplify_G201209MSP1\\lib\\vlog\\scemi_objects.v":1360942352
 #CUR:"C:\\Microsemi\\Libero_v11.0\\Synopsys\\synplify_G201209MSP1\\lib\\vlog\\scemi_pipes.svh":1360942352
 #CUR:"C:\\Microsemi\\Libero_v11.0\\Synopsys\\synplify_G201209MSP1\\lib\\vlog\\hypermods.v":1360942352
-#CUR:"N:\\373\\controller\\hdl\\controller.v":1383846638
 #CUR:"N:\\373\\controller\\component\\work\\controller_MSS\\mss_tshell.v":1383845245
 #CUR:"N:\\373\\controller\\component\\Actel\\SmartFusionMSS\\MSS\\2.5.106\\mss_comps.v":1358367745
 #CUR:"N:\\373\\controller\\component\\work\\controller_MSS\\MSS_CCC_0\\controller_MSS_tmp_MSS_CCC_0_MSS_CCC.v":1383845227
 #CUR:"N:\\373\\controller\\component\\work\\controller_MSS\\controller_MSS.v":1383845347
+#CUR:"N:\\373\\controller\\hdl\\controller.v":1383853753
 #CUR:"N:\\373\\controller\\component\\work\\controller\\controller.v":1383846754
 #numinternalfiles:5
 #defaultlanguage:verilog
-0			"N:\373\controller\hdl\controller.v" verilog
-1			"N:\373\controller\component\work\controller_MSS\mss_tshell.v" verilog
-2			"N:\373\controller\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v" verilog
-3			"N:\373\controller\component\work\controller_MSS\MSS_CCC_0\controller_MSS_tmp_MSS_CCC_0_MSS_CCC.v" verilog
-4			"N:\373\controller\component\work\controller_MSS\controller_MSS.v" verilog
+0			"N:\373\controller\component\work\controller_MSS\mss_tshell.v" verilog
+1			"N:\373\controller\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v" verilog
+2			"N:\373\controller\component\work\controller_MSS\MSS_CCC_0\controller_MSS_tmp_MSS_CCC_0_MSS_CCC.v" verilog
+3			"N:\373\controller\component\work\controller_MSS\controller_MSS.v" verilog
+4			"N:\373\controller\hdl\controller.v" verilog
 5			"N:\373\controller\component\work\controller\controller.v" verilog
 #Dependency Lists(Uses List)
 0 -1
 1 -1
 2 -1
-3 -1
-4 3
-5 0 4
+3 2
+4 -1
+5 4 3
 #Dependency Lists(Users Of)
-0 5
+0 -1
 1 -1
-2 -1
-3 4
+2 3
+3 5
 4 5
 5 -1
 #Design Unit to File Association
-module work clockDiv 0
-module work controller_interface 0
-module work MSS_APB 1
-module work MSS_XTLOSC 2
-module work MSS_LPXTLOSC 2
-module work INBUF_MSS 2
-module work OUTBUF_MSS 2
-module work TRIBUFF_MSS 2
-module work BIBUF_MSS 2
-module work BIBUF_OPEND_MSS 2
-module work INBUF_MCCC 2
-module work INBUF_LVPECL_MCCC 2
-module work INBUF_LVDS_MCCC 2
-module work MSSINT 2
-module work MSS_CCC 2
-module work MSS_ALL 2
-module work controller_MSS_tmp_MSS_CCC_0_MSS_CCC 3
-module work controller_MSS 4
+module work MSS_APB 0
+module work MSS_XTLOSC 1
+module work MSS_LPXTLOSC 1
+module work INBUF_MSS 1
+module work OUTBUF_MSS 1
+module work TRIBUFF_MSS 1
+module work BIBUF_MSS 1
+module work BIBUF_OPEND_MSS 1
+module work INBUF_MCCC 1
+module work INBUF_LVPECL_MCCC 1
+module work INBUF_LVDS_MCCC 1
+module work MSSINT 1
+module work MSS_CCC 1
+module work MSS_ALL 1
+module work controller_MSS_tmp_MSS_CCC_0_MSS_CCC 2
+module work controller_MSS 3
+module work clockDiv 4
+module work controller_interface 4
 module work controller 5

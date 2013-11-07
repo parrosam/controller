@@ -19,9 +19,9 @@ Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0
 Finished Pre Mapping Phase.@N: BN225 |Writing default property annotation file N:\373\controller\synthesis\controller.sap.
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:00s; Memory used current: 38MB peak: 102MB)
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 39MB peak: 102MB)
 
-Process took 0h:00m:03s realtime, 0h:00m:01s cputime
-# Thu Nov 07 12:53:51 2013
+Process took 0h:00m:02s realtime, 0h:00m:01s cputime
+# Thu Nov 07 14:50:04 2013
 
 ###########################################################]

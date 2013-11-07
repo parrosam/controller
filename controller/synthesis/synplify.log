@@ -1,7 +1,7 @@
 
 Starting:    C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\win64\mbin\synbatch.exe
 Install:     C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1
-Date:        Thu Nov 07 12:53:45 2013
+Date:        Thu Nov 07 14:49:59 2013
 Version:     G-2012.09M-SP1 
 
 Arguments:   -product synplify_pro  -licensetype synplifypro_actel -batch -log synplify.log controller_syn.tcl
@@ -40,7 +40,7 @@ Running Premap on controller_syn|synthesis
 
 premap Completed with warnings
 Return Code: 1
-Run Time:0h:00m:05s
+Run Time:0h:00m:04s
 
 
 Job Compile completed on controller_syn|synthesis
@@ -51,7 +51,7 @@ Running Map & Optimize on controller_syn|synthesis
 
 fpga_mapper Completed with warnings
 Return Code: 1
-Run Time:0h:00m:05s
+Run Time:0h:00m:03s
 
 
 Job Map completed on controller_syn|synthesis

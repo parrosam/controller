@@ -1,15 +1,15 @@
 #--  Synopsys, Inc.
 #--  Version G-2012.09M-SP1 
 #--  Project file N:\373\controller\synthesis\run_options.txt
-#--  Written on Thu Nov 07 12:53:45 2013
+#--  Written on Thu Nov 07 14:49:59 2013
 
 
 #project files
-add_file -verilog "N:/373/controller/hdl/controller.v"
 add_file -verilog "N:/373/controller/component/work/controller_MSS/mss_tshell.v"
 add_file -verilog "N:/373/controller/component/Actel/SmartFusionMSS/MSS/2.5.106/mss_comps.v"
 add_file -verilog "N:/373/controller/component/work/controller_MSS/MSS_CCC_0/controller_MSS_tmp_MSS_CCC_0_MSS_CCC.v"
 add_file -verilog "N:/373/controller/component/work/controller_MSS/controller_MSS.v"
+add_file -verilog "N:/373/controller/hdl/controller.v"
 add_file -verilog "N:/373/controller/component/work/controller/controller.v"
 add_file -constraint "N:/373/controller/component/work/controller_MSS/mss_tshell_syn.sdc"
 

@@ -1,5 +1,5 @@
 # Created by Actel Designer Software 11.0.0.23
-# Thu Nov 07 12:54:57 2013
+# Thu Nov 07 14:50:38 2013
 
 # (OPEN DESIGN)
 
@@ -14,11 +14,9 @@ set_defvar "IDE_DESIGNERVIEW_REVNUM0" "1"
 set_defvar "IDE_DESIGNERVIEW_ROOTDIR" {N:\373\controller\designer}
 set_defvar "IDE_DESIGNERVIEW_LASTREV" "1"
 
-
-# import of input files
-import_source  \
--format "edif" -edif_flavor "GENERIC" -netlist_naming "VERILOG" {../../synthesis/controller.edn} -merge_physical "no" -merge_timing "yes"
-compile
-report -type "status" {controller_compile_report.txt}
+report -type "timing" -format "TEXT" -analysis "max" -print_summary "yes" -use_slack_threshold "no"                             -print_paths "yes" -max_paths 5 -max_expanded_paths 1                             -max_parallel_paths 1 -include_user_sets "no"                             -include_pin_to_pin "yes" -include_clock_domains "yes"                             -select_clock_domains "no" {controller_maxdelay_timing_report.txt}
+report -type "timing" -format "TEXT" -analysis "min" -print_summary "yes" -use_slack_threshold "no"                             -print_paths "yes" -max_paths 5 -max_expanded_paths 1                             -max_parallel_paths 1 -include_user_sets "no"                             -include_pin_to_pin "yes" -include_clock_domains "yes"                             -select_clock_domains "no" {controller_mindelay_timing_report.txt}
+report -type "timing_violations" -format "TEXT" -analysis "max" -use_slack_threshold "yes" -slack_threshold 0.00                               -limit_max_paths "yes" -max_paths 100 -max_expanded_paths 0                               -max_parallel_paths 1 {controller_maxdelay_timingviolations_report.txt}
+report -type "timing_violations" -format "TEXT" -analysis "min" -use_slack_threshold "yes" -slack_threshold 0.00                               -limit_max_paths "yes" -max_paths 100 -max_expanded_paths 0                               -max_parallel_paths 1 {controller_mindelay_timingviolations_report.txt}
 
 save_design

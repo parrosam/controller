@@ -22,13 +22,19 @@ module controller_interface(
 	//Divided clock to 4 us period
 	//wire contCLK;
 	clockDiv c1(PCLK, contCLK);
-	assign contRead = 1;
-	assign contWrite = 1;
+	
+	reg write;
+	always @(posedge contCLK)
+	begin
+		write <= ~write;
+	end
+
+	assign contWrite = write;
 
 endmodule
 
 module clockDiv(input wire PCLK, output wire contCLK);
-	reg count;
+	reg [8:0]count;
 	reg divCLK;
 
 	always @(posedge PCLK)

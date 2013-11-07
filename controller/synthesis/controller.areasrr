@@ -5,5 +5,60 @@ Report for cell controller.verilog
                                 GND         1       0.0        0.0
                              OUTBUF         2       0.0        0.0
                                 VCC         1       0.0        0.0
+                     controller_MSS         1       0.0        0.0
+               controller_interface         1      40.0       40.0
+                            
+                         TOTAL              6                 40.0
+----------------------------------------------------------------------
+Report for cell controller_MSS.netlist
+     Instance path:  controller_MSS_0
+                                          Cell usage:
+                               cell       count     area    count*area
+                                GND         1       0.0        0.0
+                                VCC         1       0.0        0.0
+          controller_MSS_tmp_MSS_CCC_0_MSS_CCC         1       0.0        0.0
+                            
+                         TOTAL              3                  0.0
+----------------------------------------------------------------------
+Report for cell controller_MSS_tmp_MSS_CCC_0_MSS_CCC.netlist
+     Instance path:  controller_MSS_0.MSS_CCC_0
+                                          Cell usage:
+                               cell       count     area    count*area
+                                GND         1       0.0        0.0
+                            MSS_CCC         1       0.0        0.0
+                              RCOSC         1       0.0        0.0
+                                VCC         1       0.0        0.0
                             
                          TOTAL              4                  0.0
+----------------------------------------------------------------------
+Report for cell controller_interface.netlist
+     Instance path:  controller_interface_0
+                                          Cell usage:
+                               cell       count     area    count*area
+                               DFN1         1       1.0        1.0
+                                GND         1       0.0        0.0
+                                INV         1       1.0        1.0
+                                VCC         1       0.0        0.0
+                           clockDiv         1      38.0       38.0
+                            
+                         TOTAL              5                 40.0
+----------------------------------------------------------------------
+Report for cell clockDiv.netlist
+     Instance path:  controller_interface_0.c1
+                                          Cell usage:
+                               cell       count     area    count*area
+                               AND2         2       1.0        2.0
+                               AND3         7       1.0        7.0
+                               AO1D         1       1.0        1.0
+                             CLKINT         1       0.0        0.0
+                               DFN1        10       1.0       10.0
+                                GND         1       0.0        0.0
+                              NOR2B         2       1.0        2.0
+                               NOR3         2       1.0        2.0
+                                OA1         3       1.0        3.0
+                               OA1B         1       1.0        1.0
+                               OR2B         2       1.0        2.0
+                                VCC         1       0.0        0.0
+                               XOR2         8       1.0        8.0
+                            
+                         TOTAL             41                 38.0

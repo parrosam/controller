@@ -15,6 +15,112 @@
   (INSTANCE)
   (TIMINGCHECK
 
+    (PATHCONSTRAINT controller_interface_0/c1/count\[1\]/CLK  controller_interface_0/c1/count\[1\]/Q  controller_interface_0/c1/count_2_I_10/B  controller_interface_0/c1/count_2_I_10/Y  controller_interface_0/c1/count_2_I_11/B  controller_interface_0/c1/count_2_I_11/Y  controller_interface_0/c1/count_2_I_12/A  controller_interface_0/c1/count_2_I_12/Y  controller_interface_0/c1/count_RNO\[4\]/C  controller_interface_0/c1/count_RNO\[4\]/Y  controller_interface_0/c1/count\[4\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT controller_interface_0/c1/count\[0\]/CLK  controller_interface_0/c1/count\[0\]/Q  controller_interface_0/c1/count_2_I_10/A  controller_interface_0/c1/count_2_I_10/Y  controller_interface_0/c1/count_2_I_11/B  controller_interface_0/c1/count_2_I_11/Y  controller_interface_0/c1/count_2_I_12/A  controller_interface_0/c1/count_2_I_12/Y  controller_interface_0/c1/count_RNO\[4\]/C  controller_interface_0/c1/count_RNO\[4\]/Y  controller_interface_0/c1/count\[4\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT controller_interface_0/c1/count\[1\]/CLK  controller_interface_0/c1/count\[1\]/Q  controller_interface_0/c1/count_2_I_10/B  controller_interface_0/c1/count_2_I_10/Y  controller_interface_0/c1/count_2_I_22/A  controller_interface_0/c1/count_2_I_22/Y  controller_interface_0/c1/count_2_I_23/A  controller_interface_0/c1/count_2_I_23/Y  controller_interface_0/c1/count_RNO\[8\]/C  controller_interface_0/c1/count_RNO\[8\]/Y  controller_interface_0/c1/count\[8\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT controller_interface_0/c1/count\[1\]/CLK  controller_interface_0/c1/count\[1\]/Q  controller_interface_0/c1/count_2_I_10/B  controller_interface_0/c1/count_2_I_10/Y  controller_interface_0/c1/count_2_I_19/A  controller_interface_0/c1/count_2_I_19/Y  controller_interface_0/c1/count_2_I_20/A  controller_interface_0/c1/count_2_I_20/Y  controller_interface_0/c1/count_RNO\[7\]/C  controller_interface_0/c1/count_RNO\[7\]/Y  controller_interface_0/c1/count\[7\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT controller_interface_0/c1/count\[2\]/CLK  controller_interface_0/c1/count\[2\]/Q  controller_interface_0/c1/count_2_I_10/C  controller_interface_0/c1/count_2_I_10/Y  controller_interface_0/c1/count_2_I_11/B  controller_interface_0/c1/count_2_I_11/Y  controller_interface_0/c1/count_2_I_12/A  controller_interface_0/c1/count_2_I_12/Y  controller_interface_0/c1/count_RNO\[4\]/C  controller_interface_0/c1/count_RNO\[4\]/Y  controller_interface_0/c1/count\[4\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT controller_interface_0/c1/count\[4\]/CLK  controller_interface_0/c1/count\[4\]/Q  controller_interface_0/c1/count_2_I_18/B  controller_interface_0/c1/count_2_I_18/Y  controller_interface_0/c1/count_2_I_19/B  controller_interface_0/c1/count_2_I_19/Y  controller_interface_0/c1/count_2_I_20/A  controller_interface_0/c1/count_2_I_20/Y  controller_interface_0/c1/count_RNO\[7\]/C  controller_interface_0/c1/count_RNO\[7\]/Y  controller_interface_0/c1/count\[7\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT controller_interface_0/c1/count\[5\]/CLK  controller_interface_0/c1/count\[5\]/Q  controller_interface_0/c1/count_2_I_18/C  controller_interface_0/c1/count_2_I_18/Y  controller_interface_0/c1/count_2_I_19/B  controller_interface_0/c1/count_2_I_19/Y  controller_interface_0/c1/count_2_I_20/A  controller_interface_0/c1/count_2_I_20/Y  controller_interface_0/c1/count_RNO\[7\]/C  controller_interface_0/c1/count_RNO\[7\]/Y  controller_interface_0/c1/count\[7\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT controller_interface_0/c1/count\[3\]/CLK  controller_interface_0/c1/count\[3\]/Q  controller_interface_0/c1/count_2_I_18/A  controller_interface_0/c1/count_2_I_18/Y  controller_interface_0/c1/count_2_I_19/B  controller_interface_0/c1/count_2_I_19/Y  controller_interface_0/c1/count_2_I_20/A  controller_interface_0/c1/count_2_I_20/Y  controller_interface_0/c1/count_RNO\[7\]/C  controller_interface_0/c1/count_RNO\[7\]/Y  controller_interface_0/c1/count\[7\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT controller_interface_0/c1/count\[7\]/CLK  controller_interface_0/c1/count\[7\]/Q  controller_interface_0/c1/count_2_I_21/B  controller_interface_0/c1/count_2_I_21/Y  controller_interface_0/c1/count_2_I_22/C  controller_interface_0/c1/count_2_I_22/Y  controller_interface_0/c1/count_2_I_23/A  controller_interface_0/c1/count_2_I_23/Y  controller_interface_0/c1/count_RNO\[8\]/C  controller_interface_0/c1/count_RNO\[8\]/Y  controller_interface_0/c1/count\[8\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT controller_interface_0/c1/count\[6\]/CLK  controller_interface_0/c1/count\[6\]/Q  controller_interface_0/c1/count_2_I_21/A  controller_interface_0/c1/count_2_I_21/Y  controller_interface_0/c1/count_2_I_22/C  controller_interface_0/c1/count_2_I_22/Y  controller_interface_0/c1/count_2_I_23/A  controller_interface_0/c1/count_2_I_23/Y  controller_interface_0/c1/count_RNO\[8\]/C  controller_interface_0/c1/count_RNO\[8\]/Y  controller_interface_0/c1/count\[8\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT controller_interface_0/c1/count\[1\]/CLK  controller_interface_0/c1/count\[1\]/Q  controller_interface_0/c1/count_2_I_10/B  controller_interface_0/c1/count_2_I_10/Y  controller_interface_0/c1/count_2_I_16/A  controller_interface_0/c1/count_2_I_16/Y  controller_interface_0/c1/count_2_I_17/A  controller_interface_0/c1/count_2_I_17/Y  controller_interface_0/c1/count\[6\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT controller_interface_0/c1/count\[1\]/CLK  controller_interface_0/c1/count\[1\]/Q  controller_interface_0/c1/count_2_I_10/B  controller_interface_0/c1/count_2_I_10/Y  controller_interface_0/c1/count_2_I_13/A  controller_interface_0/c1/count_2_I_13/Y  controller_interface_0/c1/count_2_I_14/A  controller_interface_0/c1/count_2_I_14/Y  controller_interface_0/c1/count\[5\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT controller_interface_0/c1/count\[4\]/CLK  controller_interface_0/c1/count\[4\]/Q  controller_interface_0/c1/count_RNIRLS51\[5\]/C  controller_interface_0/c1/count_RNIRLS51\[5\]/Y  controller_interface_0/c1/count_RNO\[4\]/A  controller_interface_0/c1/count_RNO\[4\]/Y  controller_interface_0/c1/count\[4\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT controller_interface_0/c1/count\[4\]/CLK  controller_interface_0/c1/count\[4\]/Q  controller_interface_0/c1/count_RNIRLS51\[5\]/C  controller_interface_0/c1/count_RNIRLS51\[5\]/Y  controller_interface_0/c1/count_RNO\[7\]/A  controller_interface_0/c1/count_RNO\[7\]/Y  controller_interface_0/c1/count\[7\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT controller_interface_0/c1/count\[4\]/CLK  controller_interface_0/c1/count\[4\]/Q  controller_interface_0/c1/count_RNIRLS51\[5\]/C  controller_interface_0/c1/count_RNIRLS51\[5\]/Y  controller_interface_0/c1/count_RNO\[8\]/A  controller_interface_0/c1/count_RNO\[8\]/Y  controller_interface_0/c1/count\[8\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT controller_interface_0/c1/count\[4\]/CLK  controller_interface_0/c1/count\[4\]/Q  controller_interface_0/c1/count_RNIRLS51\[5\]/C  controller_interface_0/c1/count_RNIRLS51\[5\]/Y  controller_interface_0/c1/count_RNO\[0\]/A  controller_interface_0/c1/count_RNO\[0\]/Y  controller_interface_0/c1/count\[0\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT controller_interface_0/c1/count\[6\]/CLK  controller_interface_0/c1/count\[6\]/Q  controller_interface_0/c1/count_RNIRLS51\[5\]/B  controller_interface_0/c1/count_RNIRLS51\[5\]/Y  controller_interface_0/c1/count_RNO\[4\]/A  controller_interface_0/c1/count_RNO\[4\]/Y  controller_interface_0/c1/count\[4\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT controller_interface_0/c1/count\[7\]/CLK  controller_interface_0/c1/count\[7\]/Q  controller_interface_0/c1/count_RNINJ8P\[8\]/B  controller_interface_0/c1/count_RNINJ8P\[8\]/Y  controller_interface_0/c1/count_RNO\[0\]/B  controller_interface_0/c1/count_RNO\[0\]/Y  controller_interface_0/c1/count\[0\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT controller_interface_0/c1/count\[5\]/CLK  controller_interface_0/c1/count\[5\]/Q  controller_interface_0/c1/count_RNIRLS51\[5\]/A  controller_interface_0/c1/count_RNIRLS51\[5\]/Y  controller_interface_0/c1/count_RNO\[4\]/A  controller_interface_0/c1/count_RNO\[4\]/Y  controller_interface_0/c1/count\[4\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT controller_interface_0/c1/count\[7\]/CLK  controller_interface_0/c1/count\[7\]/Q  controller_interface_0/c1/count_RNINJ8P\[8\]/B  controller_interface_0/c1/count_RNINJ8P\[8\]/Y  controller_interface_0/c1/count_RNO\[4\]/B  controller_interface_0/c1/count_RNO\[4\]/Y  controller_interface_0/c1/count\[4\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT controller_interface_0/c1/count\[7\]/CLK  controller_interface_0/c1/count\[7\]/Q  controller_interface_0/c1/count_RNINJ8P\[8\]/B  controller_interface_0/c1/count_RNINJ8P\[8\]/Y  controller_interface_0/c1/count_RNO\[7\]/B  controller_interface_0/c1/count_RNO\[7\]/Y  controller_interface_0/c1/count\[7\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT controller_interface_0/c1/count\[7\]/CLK  controller_interface_0/c1/count\[7\]/Q  controller_interface_0/c1/count_RNINJ8P\[8\]/B  controller_interface_0/c1/count_RNINJ8P\[8\]/Y  controller_interface_0/c1/count_RNO\[8\]/B  controller_interface_0/c1/count_RNO\[8\]/Y  controller_interface_0/c1/count\[8\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT controller_interface_0/c1/count\[4\]/CLK  controller_interface_0/c1/count\[4\]/Q  controller_interface_0/c1/count_2_I_15/B  controller_interface_0/c1/count_2_I_15/Y  controller_interface_0/c1/count_2_I_16/B  controller_interface_0/c1/count_2_I_16/Y  controller_interface_0/c1/count_2_I_17/A  controller_interface_0/c1/count_2_I_17/Y  controller_interface_0/c1/count\[6\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT controller_interface_0/c1/count\[3\]/CLK  controller_interface_0/c1/count\[3\]/Q  controller_interface_0/c1/count_2_I_11/A  controller_interface_0/c1/count_2_I_11/Y  controller_interface_0/c1/count_2_I_12/A  controller_interface_0/c1/count_2_I_12/Y  controller_interface_0/c1/count_RNO\[4\]/C  controller_interface_0/c1/count_RNO\[4\]/Y  controller_interface_0/c1/count\[4\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT controller_interface_0/c1/count\[6\]/CLK  controller_interface_0/c1/count\[6\]/Q  controller_interface_0/c1/count_2_I_19/C  controller_interface_0/c1/count_2_I_19/Y  controller_interface_0/c1/count_2_I_20/A  controller_interface_0/c1/count_2_I_20/Y  controller_interface_0/c1/count_RNO\[7\]/C  controller_interface_0/c1/count_RNO\[7\]/Y  controller_interface_0/c1/count\[7\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT controller_interface_0/c1/count\[3\]/CLK  controller_interface_0/c1/count\[3\]/Q  controller_interface_0/c1/count_2_I_15/A  controller_interface_0/c1/count_2_I_15/Y  controller_interface_0/c1/count_2_I_16/B  controller_interface_0/c1/count_2_I_16/Y  controller_interface_0/c1/count_2_I_17/A  controller_interface_0/c1/count_2_I_17/Y  controller_interface_0/c1/count\[6\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT controller_interface_0/c1/count\[8\]/CLK  controller_interface_0/c1/count\[8\]/Q  controller_interface_0/c1/count_RNINJ8P\[8\]/A  controller_interface_0/c1/count_RNINJ8P\[8\]/Y  controller_interface_0/c1/count_RNO\[0\]/B  controller_interface_0/c1/count_RNO\[0\]/Y  controller_interface_0/c1/count\[0\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT controller_interface_0/c1/count\[4\]/CLK  controller_interface_0/c1/count\[4\]/Q  controller_interface_0/c1/count_2_I_12/B  controller_interface_0/c1/count_2_I_12/Y  controller_interface_0/c1/count_RNO\[4\]/C  controller_interface_0/c1/count_RNO\[4\]/Y  controller_interface_0/c1/count\[4\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT controller_interface_0/c1/count\[4\]/CLK  controller_interface_0/c1/count\[4\]/Q  controller_interface_0/c1/divCLK_RNO_1/C  controller_interface_0/c1/divCLK_RNO_1/Y  controller_interface_0/c1/divCLK_RNO/B  controller_interface_0/c1/divCLK_RNO/Y  controller_interface_0/c1/divCLK/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT controller_interface_0/c1/count\[7\]/CLK  controller_interface_0/c1/count\[7\]/Q  controller_interface_0/c1/count_2_I_20/B  controller_interface_0/c1/count_2_I_20/Y  controller_interface_0/c1/count_RNO\[7\]/C  controller_interface_0/c1/count_RNO\[7\]/Y  controller_interface_0/c1/count\[7\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT controller_interface_0/c1/count\[5\]/CLK  controller_interface_0/c1/count\[5\]/Q  controller_interface_0/c1/divCLK_RNO_1/B  controller_interface_0/c1/divCLK_RNO_1/Y  controller_interface_0/c1/divCLK_RNO/B  controller_interface_0/c1/divCLK_RNO/Y  controller_interface_0/c1/divCLK/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT controller_interface_0/c1/count\[3\]/CLK  controller_interface_0/c1/count\[3\]/Q  controller_interface_0/c1/divCLK_RNO_1/A  controller_interface_0/c1/divCLK_RNO_1/Y  controller_interface_0/c1/divCLK_RNO/B  controller_interface_0/c1/divCLK_RNO/Y  controller_interface_0/c1/divCLK/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT controller_interface_0/c1/count\[4\]/CLK  controller_interface_0/c1/count\[4\]/Q  controller_interface_0/c1/count_2_I_13/C  controller_interface_0/c1/count_2_I_13/Y  controller_interface_0/c1/count_2_I_14/A  controller_interface_0/c1/count_2_I_14/Y  controller_interface_0/c1/count\[5\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT controller_interface_0/c1/count\[3\]/CLK  controller_interface_0/c1/count\[3\]/Q  controller_interface_0/c1/count_2_I_13/B  controller_interface_0/c1/count_2_I_13/Y  controller_interface_0/c1/count_2_I_14/A  controller_interface_0/c1/count_2_I_14/Y  controller_interface_0/c1/count\[5\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT controller_interface_0/c1/count\[8\]/CLK  controller_interface_0/c1/count\[8\]/Q  controller_interface_0/c1/count_2_I_23/B  controller_interface_0/c1/count_2_I_23/Y  controller_interface_0/c1/count_RNO\[8\]/C  controller_interface_0/c1/count_RNO\[8\]/Y  controller_interface_0/c1/count\[8\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT controller_interface_0/c1/count\[5\]/CLK  controller_interface_0/c1/count\[5\]/Q  controller_interface_0/c1/count_2_I_16/C  controller_interface_0/c1/count_2_I_16/Y  controller_interface_0/c1/count_2_I_17/A  controller_interface_0/c1/count_2_I_17/Y  controller_interface_0/c1/count\[6\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT controller_interface_0/c1/count\[0\]/CLK  controller_interface_0/c1/count\[0\]/Q  controller_interface_0/c1/count_2_I_6/B  controller_interface_0/c1/count_2_I_6/Y  controller_interface_0/c1/count_2_I_7/A  controller_interface_0/c1/count_2_I_7/Y  controller_interface_0/c1/count\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT controller_interface_0/c1/count\[6\]/CLK  controller_interface_0/c1/count\[6\]/Q  controller_interface_0/c1/divCLK_RNO_0/B  controller_interface_0/c1/divCLK_RNO_0/Y  controller_interface_0/c1/divCLK_RNO/A  controller_interface_0/c1/divCLK_RNO/Y  controller_interface_0/c1/divCLK/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT controller_interface_0/c1/count\[1\]/CLK  controller_interface_0/c1/count\[1\]/Q  controller_interface_0/c1/count_2_I_8/B  controller_interface_0/c1/count_2_I_8/Y  controller_interface_0/c1/count_2_I_9/A  controller_interface_0/c1/count_2_I_9/Y  controller_interface_0/c1/count\[3\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT controller_interface_0/c1/count\[0\]/CLK  controller_interface_0/c1/count\[0\]/Q  controller_interface_0/c1/count_2_I_8/A  controller_interface_0/c1/count_2_I_8/Y  controller_interface_0/c1/count_2_I_9/A  controller_interface_0/c1/count_2_I_9/Y  controller_interface_0/c1/count\[3\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT controller_interface_0/c1/count\[1\]/CLK  controller_interface_0/c1/count\[1\]/Q  controller_interface_0/c1/count_2_I_6/A  controller_interface_0/c1/count_2_I_6/Y  controller_interface_0/c1/count_2_I_7/A  controller_interface_0/c1/count_2_I_7/Y  controller_interface_0/c1/count\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT controller_interface_0/c1/count\[7\]/CLK  controller_interface_0/c1/count\[7\]/Q  controller_interface_0/c1/divCLK_RNO_0/A  controller_interface_0/c1/divCLK_RNO_0/Y  controller_interface_0/c1/divCLK_RNO/A  controller_interface_0/c1/divCLK_RNO/Y  controller_interface_0/c1/divCLK/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT controller_interface_0/c1/count\[3\]/CLK  controller_interface_0/c1/count\[3\]/Q  controller_interface_0/c1/count_2_I_9/B  controller_interface_0/c1/count_2_I_9/Y  controller_interface_0/c1/count\[3\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT controller_interface_0/c1/count\[2\]/CLK  controller_interface_0/c1/count\[2\]/Q  controller_interface_0/c1/count_2_I_8/C  controller_interface_0/c1/count_2_I_8/Y  controller_interface_0/c1/count_2_I_9/A  controller_interface_0/c1/count_2_I_9/Y  controller_interface_0/c1/count\[3\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT controller_interface_0/c1/count\[5\]/CLK  controller_interface_0/c1/count\[5\]/Q  controller_interface_0/c1/count_2_I_14/B  controller_interface_0/c1/count_2_I_14/Y  controller_interface_0/c1/count\[5\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT controller_interface_0/c1/count\[6\]/CLK  controller_interface_0/c1/count\[6\]/Q  controller_interface_0/c1/count_2_I_17/B  controller_interface_0/c1/count_2_I_17/Y  controller_interface_0/c1/count\[6\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT controller_interface_0/c1/count\[1\]/CLK  controller_interface_0/c1/count\[1\]/Q  controller_interface_0/c1/count_2_I_5/B  controller_interface_0/c1/count_2_I_5/Y  controller_interface_0/c1/count\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT controller_interface_0/c1/count\[0\]/CLK  controller_interface_0/c1/count\[0\]/Q  controller_interface_0/c1/count_RNO\[0\]/C  controller_interface_0/c1/count_RNO\[0\]/Y  controller_interface_0/c1/count\[0\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT controller_interface_0/c1/count\[0\]/CLK  controller_interface_0/c1/count\[0\]/Q  controller_interface_0/c1/count_2_I_5/A  controller_interface_0/c1/count_2_I_5/Y  controller_interface_0/c1/count\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT controller_interface_0/c1/count\[2\]/CLK  controller_interface_0/c1/count\[2\]/Q  controller_interface_0/c1/count_2_I_7/B  controller_interface_0/c1/count_2_I_7/Y  controller_interface_0/c1/count\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT controller_interface_0/c1/count\[8\]/CLK  controller_interface_0/c1/count\[8\]/Q  controller_interface_0/c1/divCLK_RNO/C  controller_interface_0/c1/divCLK_RNO/Y  controller_interface_0/c1/divCLK/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT controller_interface_0/write/CLK  controller_interface_0/write/Q  controller_interface_0/write_RNO/A  controller_interface_0/write_RNO/Y  controller_interface_0/write/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT controller_interface_0/write/CLK  controller_interface_0/write/Q  contWrite_pad/D  contWrite_pad/PAD  	(10.0:10.0:10.0) )
+
   )
 )
 )

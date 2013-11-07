@@ -2,6 +2,7 @@
 
 # Clocks
 
+create_clock -name {FAB_CLK} -period 10.000000 -waveform {0.000000 5.000000} controller_MSS_0/MSS_CCC_0/I_MSSCCC:GLA
 
 # False Paths Between Clocks
 

@@ -1,13 +1,13 @@
-C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\bin64\c_ver.exe  -osyn  N:\373\controller\synthesis\synwork\controller_compiler.srs  -top  controller  -prodtype  synplify_pro  -nram -fixsmult   -divnmod -I N:\373\controller\synthesis\  -I C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\lib  -v2001  -devicelib  C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\lib\proasic\smartfusion.v  -encrypt  -pro  -dmgen  N:\373\controller\synthesis\dm  -ll 2000   -ui -fid2 -ram -sharing on  -autosm -lib work N:\373\controller\hdl\controller.v -lib work N:\373\controller\component\work\controller_MSS\mss_tshell.v -lib work N:\373\controller\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v -lib work N:\373\controller\component\work\controller_MSS\MSS_CCC_0\controller_MSS_tmp_MSS_CCC_0_MSS_CCC.v -lib work N:\373\controller\component\work\controller_MSS\controller_MSS.v -lib work N:\373\controller\component\work\controller\controller.v -loga  N:\373\controller\synthesis\controller.srr 
+C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\bin64\c_ver.exe  -osyn  N:\373\controller\synthesis\synwork\controller_compiler.srs  -top  controller  -prodtype  synplify_pro  -nram -fixsmult   -divnmod -I N:\373\controller\synthesis\  -I C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\lib  -v2001  -devicelib  C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\lib\proasic\smartfusion.v  -encrypt  -pro  -dmgen  N:\373\controller\synthesis\dm  -ll 2000   -ui -fid2 -ram -sharing on  -autosm -lib work N:\373\controller\component\work\controller_MSS\mss_tshell.v -lib work N:\373\controller\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v -lib work N:\373\controller\component\work\controller_MSS\MSS_CCC_0\controller_MSS_tmp_MSS_CCC_0_MSS_CCC.v -lib work N:\373\controller\component\work\controller_MSS\controller_MSS.v -lib work N:\373\controller\hdl\controller.v -lib work N:\373\controller\component\work\controller\controller.v -loga  N:\373\controller\synthesis\controller.srr 
 rc:1 success:1
-N:\373\controller\synthesis\synwork\controller_compiler.srs|o|1383846826|10246
+N:\373\controller\synthesis\synwork\controller_compiler.srs|o|1383853799|10704
 C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\lib\proasic\smartfusion.v|i|1360942192|72817
-N:\373\controller\hdl\controller.v|i|1383846638|1213
 N:\373\controller\component\work\controller_MSS\mss_tshell.v|i|1383845245|12226
 N:\373\controller\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v|i|1358367745|11243
 N:\373\controller\component\work\controller_MSS\MSS_CCC_0\controller_MSS_tmp_MSS_CCC_0_MSS_CCC.v|i|1383845227|2888
 N:\373\controller\component\work\controller_MSS\controller_MSS.v|i|1383845347|16395
+N:\373\controller\hdl\controller.v|i|1383853753|1279
 N:\373\controller\component\work\controller\controller.v|i|1383846754|2123
-N:\373\controller\synthesis\controller.srr|o|1383846826|6688
+N:\373\controller\synthesis\controller.srr|o|1383853800|6414
 C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\bin64\c_ver.exe|i|1361373522|5587456
 C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\bin\c_ver.exe|i|1361373516|2088448

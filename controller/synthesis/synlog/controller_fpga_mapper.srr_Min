@@ -1,7 +1,7 @@
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Thu Nov 07 12:53:56 2013
+# Timing Report written on Thu Nov 07 14:50:07 2013
 #
 
 
@@ -25,13 +25,13 @@ Performance Summary
 
 Worst slack in design: NA
 
-                   Requested     Estimated     Requested     Estimated               Clock        Clock      
-Starting Clock     Frequency     Frequency     Period        Period        Slack     Type         Group      
--------------------------------------------------------------------------------------------------------------
-FAB_CLK            100.0 MHz     NA            10.000        NA            NA        declared     clk_group_0
-FCLK               100.0 MHz     NA            10.000        NA            NA        declared     clk_group_0
-=============================================================================================================
-@W: MT511 :"n:/373/controller/component/work/controller_mss/mss_tshell_syn.sdc":1:0:1:0|Clock source n:controller_MSS_0.MSS_CCC_0.FAB_CLK not found in netlist: define_clock {n:controller_MSS_0.MSS_CCC_0.FAB_CLK} -name {FAB_CLK} -freq {100} -clockgroup {clk_group_0} 
+                                   Requested     Estimated     Requested     Estimated               Clock        Clock              
+Starting Clock                     Frequency     Frequency     Period        Period        Slack     Type         Group              
+-------------------------------------------------------------------------------------------------------------------------------------
+FAB_CLK                            100.0 MHz     165.7 MHz     10.000        6.034         3.966     declared     clk_group_0        
+FCLK                               100.0 MHz     NA            10.000        NA            NA        declared     clk_group_0        
+clockDiv|divCLK_inferred_clock     100.0 MHz     471.9 MHz     10.000        2.119         7.881     inferred     Inferred_clkgroup_0
+=====================================================================================================================================
 @W: MT511 :"n:/373/controller/component/work/controller_mss/mss_tshell_syn.sdc":2:0:2:0|Clock source n:controller_MSS_0.MSS_CCC_0.GLA0 not found in netlist: define_clock {n:controller_MSS_0.MSS_CCC_0.GLA0} -name {FCLK} -freq {100} -clockgroup {clk_group_0} 
 
 
@@ -39,11 +39,13 @@ FCLK               100.0 MHz     NA            10.000        NA            NA   
 Clock Relationships
 *******************
 
-Clocks            |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
---------------------------------------------------------------------------------------------------------
-Starting  Ending  |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
---------------------------------------------------------------------------------------------------------
-========================================================================================================
+Clocks                                                          |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                        Ending                          |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
+------------------------------------------------------------------------------------------------------------------------------------------------------
+FAB_CLK                         FAB_CLK                         |  0.000       False  |  No paths    -      |  No paths    -      |  No paths    -    
+clockDiv|divCLK_inferred_clock  clockDiv|divCLK_inferred_clock  |  0.000       False  |  No paths    -      |  No paths    -      |  No paths    -    
+======================================================================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
 

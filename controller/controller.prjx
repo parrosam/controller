@@ -9,6 +9,7 @@ KEY VendorTechnology_Die "IP4X3M1"
 KEY VendorTechnology_Package "fg484"
 KEY VendorTechnology_Speed "-1"
 KEY VendorTechnology_DieVoltage "1.5"
+KEY VendorTechnology_DSW_VCCA_VOLTAGE_RAMP_RATE ""
 KEY VendorTechnology_IO_DEFT_STD "LVTTL"
 KEY VendorTechnology_OPCONR "COM"
 KEY VendorTechnology_RESTRICTPROBEPINS "1"
@@ -138,20 +139,20 @@ PARENT="<project>\component\work\controller_MSS\controller_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\work\controller\controller.cxf,actgen_cxf"
 STATE="utd"
-TIME="1383845641"
-SIZE="2442"
+TIME="1383846780"
+SIZE="2598"
 ENDFILE
 VALUE "<project>\component\work\controller\controller.v,hdl"
 STATE="utd"
-TIME="1383845624"
-SIZE="2081"
+TIME="1383846754"
+SIZE="2123"
 PARENT="<project>\component\work\controller\controller.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\controller\testbench.v,tb_hdl"
 STATE="utd"
-TIME="1383845624"
-SIZE="1476"
+TIME="1383846754"
+SIZE="1506"
 PARENT="<project>\component\work\controller\controller.cxf"
 IS_READONLY="TRUE"
 ENDFILE
@@ -218,25 +219,35 @@ SIZE="1471"
 PARENT="<project>\component\work\controller_MSS\controller_MSS.cxf"
 IS_READONLY="TRUE"
 ENDFILE
+VALUE "<project>\component\work\DESIGN_FIRMWARE\DESIGN_FIRMWARE.cxf,actgen_cxf"
+STATE="utd"
+TIME="1383840667"
+SIZE="1863"
+ENDFILE
+VALUE "<project>\component\work\DESIGN_IO\DESIGN_IO.cxf,actgen_cxf"
+STATE="utd"
+TIME="1383840694"
+SIZE="413"
+ENDFILE
 VALUE "<project>\designer\impl1\controller.adb,adb"
 STATE="ood"
-TIME="1383844353"
-SIZE="8704"
+TIME="1383844903"
+SIZE="9728"
 ENDFILE
 VALUE "<project>\designer\impl1\controller.ide_des,ide_des"
 STATE="utd"
-TIME="1383840478"
-SIZE="179"
+TIME="1383846897"
+SIZE="933"
 ENDFILE
 VALUE "<project>\designer\impl1\controller_compile_log.rpt,log"
 STATE="utd"
-TIME="1383844757"
-SIZE="2384"
+TIME="1383846900"
+SIZE="2386"
 ENDFILE
 VALUE "<project>\hdl\controller.v,hdl"
 STATE="utd"
-TIME="1383845900"
-SIZE="1159"
+TIME="1383846638"
+SIZE="1213"
 ENDFILE
 VALUE "<project>\simulation\CompileDssBfm.tcl,sim"
 STATE="utd"
@@ -246,7 +257,7 @@ PARENT="<project>\component\Actel\SmartFusionMSS\MSS\2.5.106\MSS.cxf"
 ENDFILE
 VALUE "<project>\simulation\subsystem.bfm,sim"
 STATE="utd"
-TIME="1383845624"
+TIME="1383846754"
 SIZE="598"
 PARENT="<project>\component\work\controller\controller.cxf"
 ENDFILE
@@ -263,24 +274,24 @@ SIZE="670"
 PARENT="<project>\component\work\controller_MSS\controller_MSS.cxf"
 ENDFILE
 VALUE "<project>\synthesis\controller.edn,syn_edn"
-STATE="ood"
-TIME="1383844339"
-SIZE="2694"
+STATE="utd"
+TIME="1383846836"
+SIZE="3039"
 ENDFILE
 VALUE "<project>\synthesis\controller.so,so"
 STATE="utd"
-TIME="1383844339"
+TIME="1383846836"
 SIZE="207"
 ENDFILE
 VALUE "<project>\synthesis\controller_sdc.sdc,syn_sdc"
-STATE="ood"
-TIME="1383844339"
+STATE="utd"
+TIME="1383846836"
 SIZE="310"
 ENDFILE
 VALUE "<project>\synthesis\controller_syn.prj,prj"
 STATE="utd"
-TIME="1383844341"
-SIZE="2410"
+TIME="1383846838"
+SIZE="1980"
 ENDFILE
 ENDLIST
 LIST UsedFile
@@ -300,7 +311,9 @@ VALUE "<project>\component\work\controller_MSS\mss_tshell_syn.sdc,sdc"
 ENDLIST
 LIST ProjectState5.1
 LIST Impl1
+LiberoState=Post_Synthesis
 ideSTIMULUS=StateSuccess
+ideSYNTHESIS(<project>\synthesis\controller.edn,syn_edn)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -409,8 +422,8 @@ NAME="Synplify Pro AE"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro AE"
 LOCATION="C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\bin\synplify_pro.exe"
-PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
-BATCH=1
+PARAM=""
+BATCH=0
 EndProfile
 NAME="ModelSim AE"
 FUNCTION="Simulation"
@@ -430,7 +443,9 @@ ENDLIST
 LIST ProjectState5.1
 LIST "controller::work"
 LIST Impl1
+LiberoState=Post_Synthesis
 ideSTIMULUS=StateSuccess
+ideSYNTHESIS(<project>\synthesis\controller.edn,syn_edn)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -463,10 +478,7 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 StartPage;StartPage
-SmartDesign;controller
-SmartDesign;controller_MSS
-HDL;hdl\controller.v
-ACTIVEVIEW;hdl\controller.v
+ACTIVEVIEW;StartPage
 ENDLIST
 LIST ModuleSubBlockList
 LIST "BIBUF_MSS::work","component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v","FALSE","FALSE"
@@ -476,8 +488,8 @@ ENDLIST
 LIST "clockDiv::work","hdl\controller.v","FALSE","FALSE"
 ENDLIST
 LIST "controller::work","component\work\controller\controller.v","TRUE","FALSE"
-SUBBLOCK "controller_MSS::work","component\work\controller_MSS\controller_MSS.v","TRUE","FALSE"
 SUBBLOCK "controller_interface::work","hdl\controller.v","FALSE","FALSE"
+SUBBLOCK "controller_MSS::work","component\work\controller_MSS\controller_MSS.v","TRUE","FALSE"
 ENDLIST
 LIST "controller_interface::work","hdl\controller.v","FALSE","FALSE"
 SUBBLOCK "clockDiv::work","hdl\controller.v","FALSE","FALSE"
@@ -489,6 +501,20 @@ SUBBLOCK "INBUF_MSS::work","component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps
 ENDLIST
 LIST "controller_MSS_tmp_MSS_CCC_0_MSS_CCC::work","component\work\controller_MSS\MSS_CCC_0\controller_MSS_tmp_MSS_CCC_0_MSS_CCC.v","FALSE","FALSE"
 SUBBLOCK "MSS_CCC::work","component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "DESIGN_FIRMWARE::work","component\work\DESIGN_FIRMWARE\DESIGN_FIRMWARE.cxf","TRUE","FALSE"
+SUBBLOCK "HAL::work","","FALSE","FALSE"
+SUBBLOCK "MSS_GPIO_Driver::work","","FALSE","FALSE"
+SUBBLOCK "MSS_IAP_Driver::work","","FALSE","FALSE"
+SUBBLOCK "MSS_NVM_Driver::work","","FALSE","FALSE"
+SUBBLOCK "MSS_PDMA_Driver::work","","FALSE","FALSE"
+SUBBLOCK "MSS_RTC_Driver::work","","FALSE","FALSE"
+SUBBLOCK "MSS_Timer_Driver::work","","FALSE","FALSE"
+SUBBLOCK "SmartFusion_CMSIS_PAL::work","","FALSE","FALSE"
+ENDLIST
+LIST "DESIGN_IO::work","component\work\DESIGN_IO\DESIGN_IO.cxf","TRUE","FALSE"
+ENDLIST
+LIST "HAL::work","","FALSE","FALSE"
 ENDLIST
 LIST "INBUF_LVDS_MCCC::work","component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v","FALSE","FALSE"
 ENDLIST
@@ -504,13 +530,27 @@ LIST "MSS_APB::work","component\work\controller_MSS\mss_tshell.v","FALSE","FALSE
 ENDLIST
 LIST "MSS_CCC::work","component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v","FALSE","FALSE"
 ENDLIST
+LIST "MSS_GPIO_Driver::work","","FALSE","FALSE"
+ENDLIST
+LIST "MSS_IAP_Driver::work","","FALSE","FALSE"
+ENDLIST
 LIST "MSS_LPXTLOSC::work","component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "MSS_NVM_Driver::work","","FALSE","FALSE"
+ENDLIST
+LIST "MSS_PDMA_Driver::work","","FALSE","FALSE"
+ENDLIST
+LIST "MSS_RTC_Driver::work","","FALSE","FALSE"
+ENDLIST
+LIST "MSS_Timer_Driver::work","","FALSE","FALSE"
 ENDLIST
 LIST "MSS_XTLOSC::work","component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v","FALSE","FALSE"
 ENDLIST
 LIST "MSSINT::work","component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v","FALSE","FALSE"
 ENDLIST
 LIST "OUTBUF_MSS::work","component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "SmartFusion_CMSIS_PAL::work","","FALSE","FALSE"
 ENDLIST
 LIST "TRIBUFF_MSS::work","component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v","FALSE","FALSE"
 ENDLIST
