@@ -1,0 +1,9 @@
+----------------------------------------------------------------------
+Report for cell controller.verilog
+                                          Cell usage:
+                               cell       count     area    count*area
+                                GND         1       0.0        0.0
+                             OUTBUF         2       0.0        0.0
+                                VCC         1       0.0        0.0
+                            
+                         TOTAL              4                  0.0

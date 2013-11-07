@@ -1,0 +1,25 @@
+Target Part: A2F200M3F_FBGA484_-1
+Report for cell controller.verilog
+  Core Cell usage:
+              cell count     area count*area
+               GND     1      0.0        0.0
+               VCC     1      0.0        0.0
+
+
+                   -----          ----------
+             TOTAL     2                 0.0
+
+
+  IO Cell usage:
+              cell count
+            OUTBUF     2
+                   -----
+             TOTAL     2
+
+
+Core Cells         : 0 of 4608 (0%)
+IO Cells           : 2
+
+  RAM/ROM Usage Summary
+Block Rams : 0 of 8 (0%)
+
