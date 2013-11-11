@@ -1,0 +1,23 @@
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+Clock optimization not enabled
+1 non-gated/non-generated clock tree(s) driving 22 clock pin(s) of sequential element(s)
+1 gated/generated clock tree(s) driving 8 clock pin(s) of sequential element(s)
+0 instances converted, 8 sequential instances remain driven by gated/generated clocks
+
+==================================== Non-Gated/Non-Generated Clocks ====================================
+Clock Tree ID     Driving Element      Drive Element Type     Fanout     Sample Instance                
+--------------------------------------------------------------------------------------------------------
+@K:CKID0002       controller_MSS_0     hierarchy              22         controller_interface_0.count[9]
+========================================================================================================
+========================================================================================== Gated/Generated Clocks ==========================================================================================
+Clock Tree ID     Driving Element                      Drive Element Type     Fanout     Sample Instance                            Explanation                                                             
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       controller_interface_0.contWrite     DFN1E0                 8          controller_interface_0.numPollEdges[7]     No generated or derived clock directive on output of sequential instance
+============================================================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+

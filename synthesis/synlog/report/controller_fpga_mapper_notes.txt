@@ -1,0 +1,8 @@
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled 
+@N: MF238 :"n:\eecs373\controller\controller\hdl\controller.v":71:12:71:21|Found 20-bit incrementor, 'count_2[19:0]'
+@N: FP130 |Promoting Net contWRITE_c on CLKINT  controller_interface_0.contWrite_inferred_clock 
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
