@@ -2,7 +2,7 @@
 <device>
   <name>controller</name>
   <version>1.0</version>
-  <description>CMSIS description for controller.  Created by Actel SmartDesign on Thu Nov 07 12:52:38 2013</description>
+  <description>CMSIS description for controller.  Created by Actel SmartDesign on Tue Nov 12 17:36:36 2013</description>
   <addressUnitBits>8</addressUnitBits>
   <width>32</width>
   <peripherals>
@@ -1849,6 +1849,10 @@
     <peripheral>
       <name>ENVM_ARRAY</name>
       <baseAddress>0x60000000</baseAddress>
+    </peripheral>
+    <peripheral>
+      <name>read_0</name>
+      <baseAddress>0x40000000</baseAddress>
     </peripheral>
     <peripheral>
       <name>FPGA_FABRIC_BACKDOOR</name>

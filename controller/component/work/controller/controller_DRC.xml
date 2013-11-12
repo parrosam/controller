@@ -3,10 +3,10 @@
 <drcreport>
   <header>controller</header>
   <drc>
-    <status>C:\Microsemi\Libero_v11.0\Designer/data/drcreport\warn.png</status>
-    <StatusMessage>Warning</StatusMessage>
-    <message>Unconnected Bus Interface</message>
-    <detail>Unconnected bus interface pin CoreAPB3_0:APBmslave0</detail>
-    <crossprobe>liberoaction://cross_probe/smartdesign/controller/pins/CoreAPB3_0:APBmslave0</crossprobe>
+    <status>C:\Microsemi\Libero_v11.0\Designer/data/drcreport\error.png</status>
+    <StatusMessage>Error</StatusMessage>
+    <message> Illegal top level port name </message>
+    <detail>Conflicting top level port name with component/instance name</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/controller/pins/controller:read</crossprobe>
   </drc>
 </drcreport>

@@ -1,0 +1,2 @@
+@E: CL172 :"N:\373\controller\hdl\read.v":27:10:27:14|Only one always block can assign a given variable count[20:0]
+

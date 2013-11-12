@@ -10,18 +10,18 @@ Printing clock  summary report in "N:\373\controller\synthesis\controller_scck.r
 @N: MF248 |Running in 64-bit mode.
 @N: MF667 |Clock conversion disabled 
 
-Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 91MB peak: 92MB)
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 93MB peak: 94MB)
 
 
-Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 91MB peak: 92MB)
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 93MB peak: 94MB)
 
 @W: BN522 |Property syn_clock_priority is not supported for this target technology
 Finished Pre Mapping Phase.@N: BN225 |Writing default property annotation file N:\373\controller\synthesis\controller.sap.
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 39MB peak: 102MB)
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 41MB peak: 105MB)
 
-Process took 0h:00m:02s realtime, 0h:00m:01s cputime
-# Thu Nov 07 14:50:04 2013
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Nov 12 17:38:05 2013
 
 ###########################################################]

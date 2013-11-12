@@ -3,20 +3,19 @@
 #### START OF CLOCK OPTIMIZATION REPORT #####[
 
 Clock optimization not enabled
-1 non-gated/non-generated clock tree(s) driving 10 clock pin(s) of sequential element(s)
-1 gated/generated clock tree(s) driving 1 clock pin(s) of sequential element(s)
-0 instances converted, 1 sequential instance remains driven by gated/generated clocks
+1 non-gated/non-generated clock tree(s) driving 67 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
 
-===================================== Non-Gated/Non-Generated Clocks ======================================
-Clock Tree ID     Driving Element      Drive Element Type     Fanout     Sample Instance                   
------------------------------------------------------------------------------------------------------------
-@K:CKID0002       controller_MSS_0     hierarchy              10         controller_interface_0.c1.count[8]
-===========================================================================================================
-===================================================================================== Gated/Generated Clocks =====================================================================================
-Clock Tree ID     Driving Element                      Drive Element Type     Fanout     Sample Instance                  Explanation                                                             
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-@K:CKID0001       controller_interface_0.c1.divCLK     DFN1                   1          controller_interface_0.write     No generated or derived clock directive on output of sequential instance
-==================================================================================================================================================================================================
+=============================== Non-Gated/Non-Generated Clocks ===============================
+Clock Tree ID     Driving Element      Drive Element Type     Fanout     Sample Instance      
+----------------------------------------------------------------------------------------------
+@K:CKID0001       controller_MSS_0     hierarchy              67         read_0.buttonCount[7]
+==============================================================================================
+===== Gated/Generated Clocks =====
+************** None **************
+----------------------------------
+==================================
 
 
 ##### END OF CLOCK OPTIMIZATION REPORT ######]

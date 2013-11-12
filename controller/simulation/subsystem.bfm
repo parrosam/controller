@@ -1,5 +1,5 @@
 #===========================================================
-# Created by Actel SmartDesign Thu Nov 07 12:52:34 2013
+# Created by Actel SmartDesign Tue Nov 12 17:36:32 2013
 #
 # Syntax: 
 # ------- 
@@ -17,3 +17,4 @@
 # Define name and base address of each resource.
 #-----------------------------------------------------------
 
+memmap read_0 0x40000000;

@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by Actel SmartDesign Thu Nov 07 12:52:34 2013
+// Created by Actel SmartDesign Tue Nov 12 17:36:32 2013
 // Testbench Template
 // This is a basic testbench that instantiates your design with basic 
 // clock and reset pins connected.  If your design has special
@@ -44,12 +44,12 @@ always @(SYSCLK)
 //////////////////////////////////////////////////////////////////////
 controller controller_0 (
     // Inputs
-    .MSS_RESET_N(NSYSRESET),
-    .contRead({1{1'b0}}),
+    .data({1{1'b0}}),
 
     // Outputs
-    .contCLK( ),
-    .contWrite( )
+    .poll( ),
+    .buttonData( ),
+    .ready( )
 
     // Inouts
 

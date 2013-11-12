@@ -16,15 +16,15 @@
         <spirit:direction>in</spirit:direction>
       </spirit:signal>
       <spirit:signal>
-        <spirit:name>contRead</spirit:name>
+        <spirit:name>contREAD</spirit:name>
         <spirit:direction>in</spirit:direction>
       </spirit:signal>
       <spirit:signal>
-        <spirit:name>contWrite</spirit:name>
+        <spirit:name>contWRITE</spirit:name>
         <spirit:direction>out</spirit:direction>
       </spirit:signal>
       <spirit:signal>
-        <spirit:name>contCLK</spirit:name>
+        <spirit:name>RDATA</spirit:name>
         <spirit:direction>out</spirit:direction>
       </spirit:signal>
     </spirit:signals>

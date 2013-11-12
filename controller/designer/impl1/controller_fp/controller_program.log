@@ -5,9 +5,9 @@ Release: v11.0
 Software Version: 11.0.0.23
 PDB file 'N:\373\controller\designer\impl1\controller_fp\controller.pdb' has been loaded
 successfully.
-DESIGN : controller;  CHECKSUM : EE45;  PDB_VERSION : 1.8
+DESIGN : controller;  CHECKSUM : 6498;  PDB_VERSION : 1.8
 Driver : 3.0.0 build 1
-programmer '59167' : FlashPro3
+programmer '78180' : FlashPro3
 Opened 'N:/373/controller/designer/impl1/controller_fp/controller.pro'
 The 'open_project' command succeeded.
 The 'set_programming_file' command succeeded.
@@ -18,25 +18,25 @@ Info: Adding Flash Memory data from file
 Info: Adding FPGA Array data from file N:\373\controller\designer\impl1\controller.fdb.
 PDB file 'N:\373\controller\designer\impl1\controller_fp\controller.pdb' has been loaded
 successfully.
-DESIGN : controller;  CHECKSUM : 85B4;  PDB_VERSION : 1.8
+DESIGN : controller;  CHECKSUM : 7734;  PDB_VERSION : 1.8
 The 'update_programming_file' command succeeded.
 The 'set_programming_action' command succeeded.
-programmer '59167' : Scan Chain...
-Warning: programmer '59167' : Vpump has been selected on programmer AND an externally provided
+programmer '78180' : Scan Chain...
+Warning: programmer '78180' : Vpump has been selected on programmer AND an externally provided
          Vpump has also been detected. Using externally provided Vpump voltage source.
-programmer '59167' : Scan Chain PASSED.
-programmer '59167' : Executing action PROGRAM
-programmer '59167' : EXPORT FSN[48] = 01098a18a044
-programmer '59167' : Erase ...
-programmer '59167' : Completed erase
-programmer '59167' : EXPORT CHECKSUM: [16] = 85b4
-programmer '59167' : Programming FPGA Array
-programmer '59167' : Verifying FPGA Array
-programmer '59167' :         Verifying FPGA Array -- pass
-programmer '59167' : Program System Init and Boot Clients...
-programmer '59167' : Verify System Init and Boot Clients...
-programmer '59167' : Finished: Thu Nov 07 14:52:59 2013 (Elapsed time 00:00:37)
-programmer '59167' : Executing action PROGRAM PASSED.
+programmer '78180' : Scan Chain PASSED.
+programmer '78180' : Executing action PROGRAM
+programmer '78180' : EXPORT FSN[48] = 0114ab289048
+programmer '78180' : Erase ...
+programmer '78180' : Completed erase
+programmer '78180' : EXPORT CHECKSUM: [16] = 7734
+programmer '78180' : Programming FPGA Array
+programmer '78180' : Verifying FPGA Array
+programmer '78180' :         Verifying FPGA Array -- pass
+programmer '78180' : Program System Init and Boot Clients...
+programmer '78180' : Verify System Init and Boot Clients...
+programmer '78180' : Finished: Tue Nov 12 17:40:07 2013 (Elapsed time 00:00:37)
+programmer '78180' : Executing action PROGRAM PASSED.
 
                         o - o - o - o - o - o
 

@@ -1,7 +1,6 @@
 @N: MF248 |Running in 64-bit mode.
 @N: MF667 |Clock conversion disabled 
-@N: MF238 :"n:\373\controller\hdl\controller.v":44:12:44:21|Found 9-bit incrementor, 'count_2[8:0]'
-@N: FP130 |Promoting Net contCLK_c on CLKINT  controller_interface_0.c1.divCLK_inferred_clock 
+@N: MF238 :"n:\373\controller\hdl\poll.v":19:12:19:21|Found 20-bit incrementor, 'count_2[19:0]'
 @N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
 @N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
 @N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.

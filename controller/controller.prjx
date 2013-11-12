@@ -43,13 +43,13 @@ ENDLIST
 LIST FileManager
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS\2.5.106\MSS.cxf,actgen_cxf"
 STATE="utd"
-TIME="1383845347"
+TIME="1384287141"
 SIZE="945"
 PARENT="<project>\component\work\controller_MSS\controller_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v,hdl"
 STATE="utd"
-TIME="1358367745"
+TIME="1384287142"
 SIZE="11243"
 PARENT="<project>\component\Actel\SmartFusionMSS\MSS\2.5.106\MSS.cxf"
 BEGIN_USE_CONSTRAINT
@@ -61,137 +61,135 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_CCC\2.0.106\MSS_CCC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1383845227"
+TIME="1384287153"
 SIZE="252"
 PARENT="<project>\component\work\controller_MSS\controller_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_CM3\1.0.200\MSS_CM3.cxf,actgen_cxf"
 STATE="utd"
-TIME="1383845227"
+TIME="1384287153"
 SIZE="252"
 PARENT="<project>\component\work\controller_MSS\controller_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_COM\1.0.200\MSS_COM.cxf,actgen_cxf"
 STATE="utd"
-TIME="1383845228"
+TIME="1384287153"
 SIZE="252"
 PARENT="<project>\component\work\controller_MSS\controller_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_DMA\1.0.101\MSS_DMA.cxf,actgen_cxf"
 STATE="utd"
-TIME="1383845229"
+TIME="1384287153"
 SIZE="252"
 PARENT="<project>\component\work\controller_MSS\controller_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_ENVM\2.3.102\MSS_ENVM.cxf,actgen_cxf"
 STATE="utd"
-TIME="1383845241"
+TIME="1384287153"
 SIZE="253"
 PARENT="<project>\component\work\controller_MSS\controller_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_FIC\1.0.101\MSS_FIC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1383845241"
+TIME="1384287153"
 SIZE="252"
 PARENT="<project>\component\work\controller_MSS\controller_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_FIO\1.0.203\MSS_FIO.cxf,actgen_cxf"
 STATE="utd"
-TIME="1383845241"
+TIME="1384287153"
 SIZE="252"
 PARENT="<project>\component\work\controller_MSS\controller_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_GPIO\1.0.101\MSS_GPIO.cxf,actgen_cxf"
 STATE="utd"
-TIME="1383845241"
+TIME="1384287153"
 SIZE="253"
 PARENT="<project>\component\work\controller_MSS\controller_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_INTR\1.0.101\MSS_INTR.cxf,actgen_cxf"
 STATE="utd"
-TIME="1383845242"
+TIME="1384287153"
 SIZE="253"
 PARENT="<project>\component\work\controller_MSS\controller_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_RESET\1.0.101\MSS_RESET.cxf,actgen_cxf"
 STATE="utd"
-TIME="1383845242"
+TIME="1384287153"
 SIZE="254"
 PARENT="<project>\component\work\controller_MSS\controller_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_RTC\1.0.100\MSS_RTC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1383845242"
+TIME="1384287153"
 SIZE="252"
 PARENT="<project>\component\work\controller_MSS\controller_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_TIMER\1.0.100\MSS_TIMER.cxf,actgen_cxf"
 STATE="utd"
-TIME="1383845242"
+TIME="1384287153"
 SIZE="254"
 PARENT="<project>\component\work\controller_MSS\controller_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_UFROM\1.0.100\MSS_UFROM.cxf,actgen_cxf"
 STATE="utd"
-TIME="1383845244"
+TIME="1384287153"
 SIZE="254"
 PARENT="<project>\component\work\controller_MSS\controller_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\work\controller\controller.cxf,actgen_cxf"
 STATE="utd"
-TIME="1383846780"
-SIZE="2598"
+TIME="1384287153"
+SIZE="2358"
 ENDFILE
 VALUE "<project>\component\work\controller\controller.v,hdl"
 STATE="utd"
-TIME="1383846754"
-SIZE="2123"
+TIME="1384287154"
+SIZE="1907"
 PARENT="<project>\component\work\controller\controller.cxf"
-IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\controller\testbench.v,tb_hdl"
 STATE="utd"
-TIME="1383846754"
-SIZE="1506"
+TIME="1384287154"
+SIZE="1416"
 PARENT="<project>\component\work\controller\controller.cxf"
-IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\controller_MSS\controller_MSS.cxf,actgen_cxf"
 STATE="utd"
-TIME="1383845349"
-SIZE="8123"
+TIME="1384287154"
+SIZE="7885"
 ENDFILE
 VALUE "<project>\component\work\controller_MSS\controller_MSS.v,hdl"
 STATE="utd"
-TIME="1383845347"
-SIZE="16395"
+TIME="1384287154"
+SIZE="15571"
 PARENT="<project>\component\work\controller_MSS\controller_MSS.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\controller_MSS\MSS_CCC_0\controller_MSS_tmp_MSS_CCC_0_MSS_CCC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1383845227"
-SIZE="495"
+TIME="1384287154"
+SIZE="473"
 PARENT="<project>\component\work\controller_MSS\controller_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\work\controller_MSS\MSS_CCC_0\controller_MSS_tmp_MSS_CCC_0_MSS_CCC.v,hdl"
 STATE="utd"
-TIME="1383845227"
-SIZE="2888"
+TIME="1384287154"
+SIZE="2785"
 PARENT="<project>\component\work\controller_MSS\MSS_CCC_0\controller_MSS_tmp_MSS_CCC_0_MSS_CCC.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\controller_MSS\MSS_ENVM_0\MSS_ENVM_0.efc,efc"
 STATE="utd"
-TIME="1383845240"
-SIZE="15875"
+TIME="1384287154"
+SIZE="15642"
 PARENT="<project>\component\work\controller_MSS\controller_MSS.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\controller_MSS\mss_tshell.v,hdl"
 STATE="utd"
-TIME="1383845245"
-SIZE="12226"
+TIME="1384287154"
+SIZE="11663"
 PARENT="<project>\component\work\controller_MSS\controller_MSS.cxf"
 BEGIN_USE_CONSTRAINT
 TOOL_CONSTRAINT_TYPE="ideSYNTHESIS"
@@ -202,8 +200,8 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\controller_MSS\mss_tshell_syn.sdc,sdc"
 STATE="utd"
-TIME="1383845245"
-SIZE="200"
+TIME="1384287154"
+SIZE="198"
 PARENT="<project>\component\work\controller_MSS\controller_MSS.cxf"
 BEGIN_USE_CONSTRAINT
 TOOL_CONSTRAINT_TYPE="ideSYNTHESIS"
@@ -214,84 +212,89 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\controller_MSS\testbench.v,tb_hdl"
 STATE="utd"
-TIME="1383845347"
-SIZE="1471"
+TIME="1384287154"
+SIZE="1385"
 PARENT="<project>\component\work\controller_MSS\controller_MSS.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\DESIGN_FIRMWARE\DESIGN_FIRMWARE.cxf,actgen_cxf"
 STATE="utd"
-TIME="1383840667"
+TIME="1384287153"
 SIZE="1863"
 ENDFILE
 VALUE "<project>\component\work\DESIGN_IO\DESIGN_IO.cxf,actgen_cxf"
 STATE="utd"
-TIME="1383840694"
+TIME="1384287153"
 SIZE="413"
 ENDFILE
 VALUE "<project>\designer\impl1\controller.adb,adb"
 STATE="ood"
-TIME="1383844903"
-SIZE="9728"
+TIME="1384287154"
+SIZE="267264"
 ENDFILE
 VALUE "<project>\designer\impl1\controller.ide_des,ide_des"
 STATE="utd"
-TIME="1383846897"
+TIME="1384287154"
 SIZE="933"
 ENDFILE
 VALUE "<project>\designer\impl1\controller_compile_log.rpt,log"
 STATE="utd"
-TIME="1383846900"
-SIZE="2386"
+TIME="1384287154"
+SIZE="8916"
+ENDFILE
+VALUE "<project>\designer\impl1\controller_fp\controller.pro,pro"
+STATE="utd"
+TIME="1384287197"
+SIZE="2016"
 ENDFILE
 VALUE "<project>\hdl\controller.v,hdl"
 STATE="utd"
-TIME="1383846638"
-SIZE="1213"
+TIME="1384287155"
+SIZE="6801"
 ENDFILE
 VALUE "<project>\simulation\CompileDssBfm.tcl,sim"
 STATE="utd"
-TIME="1358367707"
+TIME="1384287155"
 SIZE="41"
 PARENT="<project>\component\Actel\SmartFusionMSS\MSS\2.5.106\MSS.cxf"
 ENDFILE
 VALUE "<project>\simulation\subsystem.bfm,sim"
 STATE="utd"
-TIME="1383846754"
-SIZE="598"
+TIME="1384287156"
+SIZE="579"
 PARENT="<project>\component\work\controller\controller.cxf"
 ENDFILE
 VALUE "<project>\simulation\test.bfm,sim"
 STATE="utd"
-TIME="1383845229"
-SIZE="5460"
+TIME="1384287156"
+SIZE="5273"
 PARENT="<project>\component\work\controller_MSS\controller_MSS.cxf"
 ENDFILE
 VALUE "<project>\simulation\user.bfm,sim"
 STATE="utd"
-TIME="1383840597"
-SIZE="670"
+TIME="1384287156"
+SIZE="647"
 PARENT="<project>\component\work\controller_MSS\controller_MSS.cxf"
 ENDFILE
 VALUE "<project>\synthesis\controller.edn,syn_edn"
-STATE="utd"
-TIME="1383846836"
-SIZE="3039"
+STATE="ood"
+TIME="1384287156"
+SIZE="120538"
 ENDFILE
 VALUE "<project>\synthesis\controller.so,so"
 STATE="utd"
-TIME="1383846836"
-SIZE="207"
+TIME="1384287156"
+SIZE="216"
 ENDFILE
 VALUE "<project>\synthesis\controller_sdc.sdc,syn_sdc"
-STATE="utd"
-TIME="1383846836"
-SIZE="310"
+STATE="ood"
+TIME="1384287157"
+SIZE="403"
 ENDFILE
 VALUE "<project>\synthesis\controller_syn.prj,prj"
 STATE="utd"
-TIME="1383846838"
-SIZE="1980"
+TIME="1384287197"
+SIZE="2188"
 ENDFILE
 ENDLIST
 LIST UsedFile
@@ -311,9 +314,7 @@ VALUE "<project>\component\work\controller_MSS\mss_tshell_syn.sdc,sdc"
 ENDLIST
 LIST ProjectState5.1
 LIST Impl1
-LiberoState=Post_Synthesis
 ideSTIMULUS=StateSuccess
-ideSYNTHESIS(<project>\synthesis\controller.edn,syn_edn)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -411,10 +412,10 @@ ENDLIST
 LIST PhySynthesisOptions
 ENDLIST
 LIST Profiles
-NAME="SoftConsole v3.3"
+NAME="SoftConsole"
 FUNCTION="SoftwareIDE"
 TOOL="SoftConsole"
-LOCATION="C:\Actel\Libero_v9.1\SoftConsole\Eclipse\eclipse.exe"
+LOCATION="C:\Microsemi\Libero_v11.0\SoftConsole\Eclipse\eclipse.exe"
 PARAM=""
 BATCH=0
 EndProfile
@@ -443,9 +444,7 @@ ENDLIST
 LIST ProjectState5.1
 LIST "controller::work"
 LIST Impl1
-LiberoState=Post_Synthesis
 ideSTIMULUS=StateSuccess
-ideSYNTHESIS(<project>\synthesis\controller.edn,syn_edn)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -485,19 +484,15 @@ LIST "BIBUF_MSS::work","component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v",
 ENDLIST
 LIST "BIBUF_OPEND_MSS::work","component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v","FALSE","FALSE"
 ENDLIST
-LIST "clockDiv::work","hdl\controller.v","FALSE","FALSE"
-ENDLIST
 LIST "controller::work","component\work\controller\controller.v","TRUE","FALSE"
 SUBBLOCK "controller_interface::work","hdl\controller.v","FALSE","FALSE"
 SUBBLOCK "controller_MSS::work","component\work\controller_MSS\controller_MSS.v","TRUE","FALSE"
 ENDLIST
 LIST "controller_interface::work","hdl\controller.v","FALSE","FALSE"
-SUBBLOCK "clockDiv::work","hdl\controller.v","FALSE","FALSE"
 ENDLIST
 LIST "controller_MSS::work","component\work\controller_MSS\controller_MSS.v","TRUE","FALSE"
 SUBBLOCK "MSS_APB::work","component\work\controller_MSS\mss_tshell.v","FALSE","FALSE"
 SUBBLOCK "controller_MSS_tmp_MSS_CCC_0_MSS_CCC::work","component\work\controller_MSS\MSS_CCC_0\controller_MSS_tmp_MSS_CCC_0_MSS_CCC.v","FALSE","FALSE"
-SUBBLOCK "INBUF_MSS::work","component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v","FALSE","FALSE"
 ENDLIST
 LIST "controller_MSS_tmp_MSS_CCC_0_MSS_CCC::work","component\work\controller_MSS\MSS_CCC_0\controller_MSS_tmp_MSS_CCC_0_MSS_CCC.v","FALSE","FALSE"
 SUBBLOCK "MSS_CCC::work","component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v","FALSE","FALSE"
