@@ -1,0 +1,13 @@
+C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\bin64\c_ver.exe  -osyn  N:\eecs373\controller\controller\synthesis\synwork\controller_compiler.srs  -top  controller  -prodtype  synplify_pro  -nram -fixsmult   -divnmod -I N:\eecs373\controller\controller\synthesis\  -I C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\lib  -v2001  -devicelib  C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\lib\proasic\smartfusion.v  -encrypt  -pro  -dmgen  N:\eecs373\controller\controller\synthesis\dm  -ll 2000   -ui -fid2 -ram -sharing on  -autosm -lib work N:\eecs373\controller\controller\component\work\controller_MSS\mss_tshell.v -lib work N:\eecs373\controller\controller\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v -lib work N:\eecs373\controller\controller\component\work\controller_MSS\MSS_CCC_0\controller_MSS_tmp_MSS_CCC_0_MSS_CCC.v -lib work N:\eecs373\controller\controller\component\work\controller_MSS\controller_MSS.v -lib work N:\eecs373\controller\controller\hdl\controller.v -lib work N:\eecs373\controller\controller\component\work\controller\controller.v -loga  N:\eecs373\controller\controller\synthesis\controller.srr 
+rc:1 success:1
+N:\eecs373\controller\controller\synthesis\synwork\controller_compiler.srs|o|1384211894|13064
+C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\lib\proasic\smartfusion.v|i|1360942192|72817
+N:\eecs373\controller\controller\component\work\controller_MSS\mss_tshell.v|i|1384201972|12226
+N:\eecs373\controller\controller\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v|i|1358366554|11243
+N:\eecs373\controller\controller\component\work\controller_MSS\MSS_CCC_0\controller_MSS_tmp_MSS_CCC_0_MSS_CCC.v|i|1384201962|2888
+N:\eecs373\controller\controller\component\work\controller_MSS\controller_MSS.v|i|1384202029|15894
+N:\eecs373\controller\controller\hdl\controller.v|i|1384211877|7172
+N:\eecs373\controller\controller\component\work\controller\controller.v|i|1384209862|1969
+N:\eecs373\controller\controller\synthesis\controller.srr|o|1384211894|6643
+C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\bin64\c_ver.exe|i|1361373522|5587456
+C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\bin\c_ver.exe|i|1361373516|2088448
