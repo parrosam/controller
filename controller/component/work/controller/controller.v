@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Tue Nov 12 17:36:32 2013
+// Created by SmartDesign Tue Nov 12 18:55:49 2013
 // Version: v11.0 11.0.0.23
 //////////////////////////////////////////////////////////////////////
 
@@ -12,7 +12,8 @@ module controller(
     // Outputs
     buttonData,
     poll,
-    ready
+    ready,
+    sample
 );
 
 //--------------------------------------------------------------------
@@ -22,13 +23,14 @@ input        data;
 //--------------------------------------------------------------------
 // Output
 //--------------------------------------------------------------------
-output [6:0] buttonData;
+output [4:0] buttonData;
 output       poll;
 output       ready;
+output       sample;
 //--------------------------------------------------------------------
 // Nets
 //--------------------------------------------------------------------
-wire   [6:0]  buttonData_1;
+wire   [4:0]  buttonData_2;
 wire          controller_MSS_0_FAB_CLK;
 wire          controller_MSS_0_M2F_RESET_N_0;
 wire          controller_MSS_0_MSS_MASTER_APB_0_PENABLE;
@@ -49,9 +51,11 @@ wire          CoreAPB3_0_APBmslave0_PWRITE;
 wire          data;
 wire          poll_net_0;
 wire          ready_net_0;
-wire          poll_net_1;
-wire   [6:0]  buttonData_1_net_0;
+wire          sample_net_0;
 wire          ready_net_1;
+wire          poll_net_1;
+wire          sample_net_1;
+wire   [4:0]  buttonData_2_net_0;
 //--------------------------------------------------------------------
 // TiedOff Nets
 //--------------------------------------------------------------------
@@ -106,12 +110,14 @@ assign PRDATAS16_const_net_0 = 32'h00000000;
 //--------------------------------------------------------------------
 // Top level output port assignments
 //--------------------------------------------------------------------
-assign poll_net_1         = poll_net_0;
-assign poll               = poll_net_1;
-assign buttonData_1_net_0 = buttonData_1;
-assign buttonData[6:0]    = buttonData_1_net_0;
 assign ready_net_1        = ready_net_0;
 assign ready              = ready_net_1;
+assign poll_net_1         = poll_net_0;
+assign poll               = poll_net_1;
+assign sample_net_1       = sample_net_0;
+assign sample             = sample_net_1;
+assign buttonData_2_net_0 = buttonData_2;
+assign buttonData[4:0]    = buttonData_2_net_0;
 //--------------------------------------------------------------------
 // Bus Interface Nets Assignments - Unequal Pin Widths
 //--------------------------------------------------------------------
@@ -289,7 +295,8 @@ read read_0(
         .PREADY     ( CoreAPB3_0_APBmslave0_PREADY ),
         .PSLVERR    ( CoreAPB3_0_APBmslave0_PSLVERR ),
         .PRDATA     ( CoreAPB3_0_APBmslave0_PRDATA ),
-        .buttonData ( buttonData_1 ) 
+        .buttonData ( buttonData_2 ),
+        .sample     ( sample_net_0 ) 
         );
 
 

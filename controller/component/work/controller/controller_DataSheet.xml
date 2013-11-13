@@ -12,7 +12,7 @@
     <project-description>
     </project-description>
     <location>N:/373/controller/component/work/controller</location>
-    <state>GENERATED ( Tue Nov 12 17:36:41 2013 )</state>
+    <state>GENERATED ( Tue Nov 12 18:55:59 2013 )</state>
     <swide-toolchain>SoftConsole workspace generated to N:\373\controller\SoftConsole</swide-toolchain>
   </project-settings>
   <site-map>
@@ -42,7 +42,7 @@
     <io-standard>LVTTL</io-standard>
   </io>
   <io>
-    <port-name>buttonData[6]</port-name>
+    <port-name>poll</port-name>
     <direction>OUT</direction>
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>
@@ -60,8 +60,8 @@
     <io-standard>LVTTL</io-standard>
   </io>
   <io>
-    <port-name>data</port-name>
-    <direction>IN</direction>
+    <port-name>ready</port-name>
+    <direction>OUT</direction>
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>
   </io>
@@ -72,25 +72,19 @@
     <io-standard>LVTTL</io-standard>
   </io>
   <io>
-    <port-name>buttonData[5]</port-name>
+    <port-name>sample</port-name>
     <direction>OUT</direction>
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>
   </io>
   <io>
-    <port-name>poll</port-name>
-    <direction>OUT</direction>
+    <port-name>data</port-name>
+    <direction>IN</direction>
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>
   </io>
   <io>
     <port-name>buttonData[0]</port-name>
-    <direction>OUT</direction>
-    <pin-number>-</pin-number>
-    <io-standard>LVTTL</io-standard>
-  </io>
-  <io>
-    <port-name>ready</port-name>
     <direction>OUT</direction>
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>

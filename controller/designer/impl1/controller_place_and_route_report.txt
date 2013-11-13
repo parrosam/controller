@@ -1,13 +1,13 @@
 ***************************************************************************
                                Status Report
-                          Tue Nov 12 17:38:41 2013 ***************************************************************************
+                          Tue Nov 12 19:05:16 2013 ***************************************************************************
 
 Product: Designer
 Release: v11.0
 Version: 11.0.0.23
 File Name: N:\373\controller\designer\impl1\controller.adb
 Design Name: controller  Design State: layout
-Last Saved: Tue Nov 12 17:38:18 2013
+Last Saved: Tue Nov 12 19:04:53 2013
 
 ***** Device Data **************************************************
 
@@ -22,7 +22,7 @@ Voltage Range:   COM
 
 ***** Import Variables *********************************************
 
-Source File(s) Imported on Tue Nov 12 17:38:14 2013:
+Source File(s) Imported on Tue Nov 12 19:04:49 2013:
         N:\373\controller\synthesis\controller.edn
 
 
@@ -90,9 +90,9 @@ Optimized macros:
   - Buffers:                0
   - Inverters:              0
   - Tieoff:                 0
-  - Logic combining:        14
+  - Logic combining:        16
 
-    Total macros optimized  14
+    Total macros optimized  16
 
 There were 0 error(s) and 5 warning(s) in this design.
 =====================================================================
@@ -107,8 +107,8 @@ Compile report:
 ===============
 
     Microcontroller Subsystem  Used:      0  Total:      1   (0.00%)
-    Fabric                     Used:    398  Total:   4608   (8.64%)
-    Fabric IO (W/ clocks)      Used:     10  Total:     94   (10.64%)
+    Fabric                     Used:    400  Total:   4608   (8.68%)
+    Fabric IO (W/ clocks)      Used:      9  Total:     94   (9.57%)
     Fabric Differential IO     Used:      0  Total:     47   (0.00%)
     Dedicated Analog IO        Used:      0  Total:     32   (0.00%)
     Dedicated MSS IO           Used:      0  Total:     43   (0.00%)
@@ -136,15 +136,15 @@ Core Information:
 
     Type    | Instances    | Core tiles
     --------|--------------|-----------
-    COMB    | 331          | 331
-    SEQ     | 67           | 67
+    COMB    | 337          | 337
+    SEQ     | 63           | 63
 
 I/O Function:
 
     Type                          | w/o register  | w/ register  | w/ DDR register
     ------------------------------|---------------|--------------|----------------
     Input I/O                     | 1             | 0            | 0
-    Output I/O                    | 9             | 0            | 0
+    Output I/O                    | 8             | 0            | 0
     Bidirectional I/O             | 0             | 0            | 0
     Differential Input I/O Pairs  | 0             | 0            | 0
     Differential Output I/O Pairs | 0             | 0            | 0
@@ -155,15 +155,13 @@ I/O Technology:
     --------------------------------|-------|-------|-------|--------|--------------
     I/O Standard(s)                 | Vcci  | Vref  | Input | Output | Bidirectional
     --------------------------------|-------|-------|-------|--------|--------------
-    LVTTL                           | 3.30v | N/A   | 1     | 9      | 0
+    LVTTL                           | 3.30v | N/A   | 1     | 8      | 0
 
 I/O Placement:
 
-    Locked  :   9 ( 90.00% )
-    Placed  :   1 ( 10.00% )
+    Locked  :   9 ( 100.00% )
+    Placed  :   0
     UnPlaced:   0
-
-Warning: Only some I/Os are locked
 
 Net information report:
 =======================
@@ -171,56 +169,56 @@ Net information report:
 The following nets have been assigned to a chip global resource:
     Fanout  Type          Name
     --------------------------
-    67      CLK_NET       Net   : FAB_CLK
+    63      CLK_NET       Net   : FAB_CLK
                           Driver: controller_MSS_0/MSS_CCC_0/I_MSSCCC
                           Source: ESSENTIAL
 
 High fanout nets in the post compile netlist:
     Fanout  Type          Name
     --------------------------
-    24      INT_NET       Net   : pollSignal_0/count[7]
-                          Driver: pollSignal_0/count[7]
-    23      INT_NET       Net   : pollSignal_0/count[9]
-                          Driver: pollSignal_0/count[9]
-    22      INT_NET       Net   : pollSignal_0/count[8]
-                          Driver: pollSignal_0/count[8]
-    21      INT_NET       Net   : read_0/N_207
-                          Driver: read_0/dataSync_RNIVIQF_1[1]
-    21      INT_NET       Net   : pollSignal_0/count[6]
+    23      INT_NET       Net   : pollSignal_0/count[6]
                           Driver: pollSignal_0/count[6]
-    18      INT_NET       Net   : pollSignal_0/count[10]
-                          Driver: pollSignal_0/count[10]
+    21      INT_NET       Net   : pollSignal_0/count[7]
+                          Driver: pollSignal_0/count[7]
+    20      INT_NET       Net   : pollSignal_0/count[8]
+                          Driver: pollSignal_0/count[8]
     18      INT_NET       Net   : pollSignal_0/count[12]
                           Driver: pollSignal_0/count[12]
-    17      INT_NET       Net   : pollSignal_0/count[4]
+    18      INT_NET       Net   : pollSignal_0/count[4]
                           Driver: pollSignal_0/count[4]
-    14      INT_NET       Net   : read_0/N_211_0
-                          Driver: read_0/dataSync_RNIVIQF_0[1]
-    13      INT_NET       Net   : read_0/N_211
+    15      INT_NET       Net   : ready_c_0
+                          Driver: pollSignal_0/read_0
+    15      INT_NET       Net   : pollSignal_0/count[9]
+                          Driver: pollSignal_0/count[9]
+    14      INT_NET       Net   : ready_c
+                          Driver: pollSignal_0/read
+    13      INT_NET       Net   : read_0/buttonCount15
+                          Driver: read_0/dataSync_RNIHGP9[1]
+    13      INT_NET       Net   : read_0/N_46
                           Driver: read_0/dataSync_RNIVIQF[1]
 
 Nets that are candidates for clock assignment and the resulting fanout:
     Fanout  Type          Name
     --------------------------
-    24      INT_NET       Net   : pollSignal_0/count[7]
-                          Driver: pollSignal_0/count[7]
-    23      INT_NET       Net   : pollSignal_0/count[9]
-                          Driver: pollSignal_0/count[9]
-    22      INT_NET       Net   : pollSignal_0/count[8]
-                          Driver: pollSignal_0/count[8]
-    21      INT_NET       Net   : read_0/N_207
-                          Driver: read_0/dataSync_RNIVIQF_1[1]
-    21      INT_NET       Net   : pollSignal_0/count[6]
+    23      INT_NET       Net   : pollSignal_0/count[6]
                           Driver: pollSignal_0/count[6]
-    18      INT_NET       Net   : pollSignal_0/count[10]
-                          Driver: pollSignal_0/count[10]
+    21      INT_NET       Net   : pollSignal_0/count[7]
+                          Driver: pollSignal_0/count[7]
+    20      INT_NET       Net   : pollSignal_0/count[8]
+                          Driver: pollSignal_0/count[8]
     18      INT_NET       Net   : pollSignal_0/count[12]
                           Driver: pollSignal_0/count[12]
-    17      INT_NET       Net   : pollSignal_0/count[4]
+    18      INT_NET       Net   : pollSignal_0/count[4]
                           Driver: pollSignal_0/count[4]
-    14      INT_NET       Net   : read_0/N_211_0
-                          Driver: read_0/dataSync_RNIVIQF_0[1]
-    13      INT_NET       Net   : read_0/N_211
+    15      INT_NET       Net   : ready_c_0
+                          Driver: pollSignal_0/read_0
+    15      INT_NET       Net   : pollSignal_0/count[9]
+                          Driver: pollSignal_0/count[9]
+    14      INT_NET       Net   : ready_c
+                          Driver: pollSignal_0/read
+    13      INT_NET       Net   : read_0/buttonCount15
+                          Driver: read_0/dataSync_RNIHGP9[1]
+    13      INT_NET       Net   : read_0/N_46
                           Driver: read_0/dataSync_RNIVIQF[1]
 
 
@@ -247,16 +245,16 @@ Global net placement completed successfully.
 
                         o - o - o - o - o - o
 
-Timing-driven Placer Started: Tue Nov 12 17:38:22 2013
+Timing-driven Placer Started: Tue Nov 12 19:04:57 2013
 
-Placer Finished: Tue Nov 12 17:38:27 2013
+Placer Finished: Tue Nov 12 19:05:02 2013
 Total Placer CPU Time:     00:00:05
 
                         o - o - o - o - o - o
 
 
 Timing-driven Router 
-Design: controller                      Started: Tue Nov 12 17:38:29 2013
+Design: controller                      Started: Tue Nov 12 19:05:04 2013
 
  
 Iterative improvement...
@@ -264,7 +262,7 @@ Iterative improvement...
 Timing-driven Router completed successfully.
 
 Design: controller                      
-Finished: Tue Nov 12 17:38:38 2013
+Finished: Tue Nov 12 19:05:13 2013
 Total CPU Time:     00:00:08            Total Elapsed Time: 00:00:09
 Total Memory Usage: 150.4 Mbytes
                         o - o - o - o - o - o

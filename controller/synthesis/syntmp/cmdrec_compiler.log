@@ -1,17 +1,17 @@
-C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\bin64\c_ver.exe  -osyn  N:\373\controller\synthesis\synwork\controller_compiler.srs  -top  controller  -prodtype  synplify_pro  -nram -fixsmult   -divnmod -I N:\373\controller\synthesis\  -I C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\lib  -v2001  -devicelib  C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\lib\proasic\smartfusion.v  -encrypt  -pro  -dmgen  N:\373\controller\synthesis\dm  -ll 2000   -ui -fid2 -ram -sharing on  -autosm -lib work N:\373\controller\component\work\controller_MSS\mss_tshell.v -lib work N:\373\controller\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v -lib work N:\373\controller\component\work\controller_MSS\MSS_CCC_0\controller_MSS_tmp_MSS_CCC_0_MSS_CCC.v -lib work N:\373\controller\component\work\controller_MSS\controller_MSS.v -lib work N:\373\controller\hdl\poll.v -lib work N:\373\controller\hdl\read.v -lib COREAPB3_LIB N:\373\controller\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v -lib COREAPB3_LIB N:\373\controller\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3_iaddr_reg.v -lib COREAPB3_LIB N:\373\controller\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v -lib work N:\373\controller\component\work\controller\controller.v -loga  N:\373\controller\synthesis\controller.srr 
+C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\bin64\c_ver.exe  -osyn  N:\373\controller\synthesis\synwork\controller_compiler.srs  -top  controller  -prodtype  synplify_pro  -nram -fixsmult   -divnmod -I N:\373\controller\synthesis\  -I C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\lib  -v2001  -devicelib  C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\lib\proasic\smartfusion.v  -encrypt  -pro  -dmgen  N:\373\controller\synthesis\dm  -ll 2000   -ui -fid2 -ram -sharing on  -autosm -lib work N:\373\controller\component\work\controller_MSS\mss_tshell.v -lib work N:\373\controller\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v -lib work N:\373\controller\component\work\controller_MSS\MSS_CCC_0\controller_MSS_tmp_MSS_CCC_0_MSS_CCC.v -lib work N:\373\controller\component\work\controller_MSS\controller_MSS.v -lib work N:\373\controller\hdl\poll.v -lib COREAPB3_LIB N:\373\controller\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v -lib COREAPB3_LIB N:\373\controller\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3_iaddr_reg.v -lib COREAPB3_LIB N:\373\controller\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v -lib work N:\373\controller\hdl\read.v -lib work N:\373\controller\component\work\controller\controller.v -loga  N:\373\controller\synthesis\controller.srr 
 rc:1 success:1
-N:\373\controller\synthesis\synwork\controller_compiler.srs|o|1384295882|50236
+N:\373\controller\synthesis\synwork\controller_compiler.srs|o|1384301077|50005
 C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\lib\proasic\smartfusion.v|i|1360942192|72817
 N:\373\controller\component\work\controller_MSS\mss_tshell.v|i|1384289495|12226
 N:\373\controller\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v|i|1358367745|11243
 N:\373\controller\component\work\controller_MSS\MSS_CCC_0\controller_MSS_tmp_MSS_CCC_0_MSS_CCC.v|i|1384289485|2888
 N:\373\controller\component\work\controller_MSS\controller_MSS.v|i|1384289539|17574
-N:\373\controller\hdl\poll.v|i|1384295010|5336
-N:\373\controller\hdl\read.v|i|1384295755|2625
+N:\373\controller\hdl\poll.v|i|1384297475|5339
 N:\373\controller\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v|i|1366392646|6738
 N:\373\controller\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3_iaddr_reg.v|i|1366392646|3312
 N:\373\controller\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v|i|1366392646|32421
-N:\373\controller\component\work\controller\controller.v|i|1384295792|13612
-N:\373\controller\synthesis\controller.srr|o|1384295882|17547
+N:\373\controller\hdl\read.v|i|1384301021|2705
+N:\373\controller\component\work\controller\controller.v|i|1384300549|13830
+N:\373\controller\synthesis\controller.srr|o|1384301077|17697
 C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\bin64\c_ver.exe|i|1361373522|5587456
 C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\bin\c_ver.exe|i|1361373516|2088448

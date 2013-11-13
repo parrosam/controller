@@ -3,7 +3,7 @@ Timing Report Max Delay Analysis
 SmartTime Version v11.0
 Microsemi Corporation - Actel Designer Software Release v11.0 (Version 11.0.0.23)
 Copyright (c) 1989-2013
-Date: Tue Nov 12 17:38:46 2013
+Date: Tue Nov 12 19:05:22 2013
 
 
 Design: controller
@@ -25,14 +25,14 @@ Scenario for Timing Analysis: Primary
 SUMMARY
 
 Clock Domain:               mss_ccc_gla1
-Period (ns):                9.186
-Frequency (MHz):            108.861
+Period (ns):                9.316
+Frequency (MHz):            107.342
 Required Period (ns):       10.000
 Required Frequency (MHz):   100.000
-External Setup (ns):        -2.618
-External Hold (ns):         2.807
-Min Clock-To-Out (ns):      5.622
-Max Clock-To-Out (ns):      10.756
+External Setup (ns):        -2.595
+External Hold (ns):         2.820
+Min Clock-To-Out (ns):      5.619
+Max Clock-To-Out (ns):      10.370
 
 Clock Domain:               controller_MSS_0/MSS_CCC_0/I_RCOSC:CLKOUT
 Period (ns):                N/A
@@ -56,62 +56,62 @@ Clock Domain mss_ccc_gla1
 SET Register to Register
 
 Path 1
-  From:                        pollSignal_0/count[11]:CLK
+  From:                        pollSignal_0/count[7]:CLK
   To:                          pollSignal_0/pollSignal:D
-  Delay (ns):                  8.749
-  Slack (ns):                  0.814
-  Arrival (ns):                13.890
-  Required (ns):               14.704
-  Setup (ns):                  0.409
-  Minimum Period (ns):         9.186
+  Delay (ns):                  8.852
+  Slack (ns):                  0.684
+  Arrival (ns):                13.998
+  Required (ns):               14.682
+  Setup (ns):                  0.435
+  Minimum Period (ns):         9.316
 
 Path 2
-  From:                        pollSignal_0/count[12]:CLK
+  From:                        pollSignal_0/count[2]:CLK
   To:                          pollSignal_0/pollSignal:D
-  Delay (ns):                  8.711
-  Slack (ns):                  0.852
-  Arrival (ns):                13.852
-  Required (ns):               14.704
-  Setup (ns):                  0.409
-  Minimum Period (ns):         9.148
+  Delay (ns):                  8.697
+  Slack (ns):                  0.848
+  Arrival (ns):                13.834
+  Required (ns):               14.682
+  Setup (ns):                  0.435
+  Minimum Period (ns):         9.152
 
 Path 3
-  From:                        pollSignal_0/count[6]:CLK
+  From:                        pollSignal_0/count[8]:CLK
   To:                          pollSignal_0/pollSignal:D
-  Delay (ns):                  8.674
-  Slack (ns):                  0.881
-  Arrival (ns):                13.823
-  Required (ns):               14.704
+  Delay (ns):                  8.556
+  Slack (ns):                  1.024
+  Arrival (ns):                13.684
+  Required (ns):               14.708
   Setup (ns):                  0.409
-  Minimum Period (ns):         9.119
+  Minimum Period (ns):         8.976
 
 Path 4
-  From:                        pollSignal_0/count[18]:CLK
+  From:                        pollSignal_0/count[3]:CLK
   To:                          pollSignal_0/pollSignal:D
-  Delay (ns):                  8.618
-  Slack (ns):                  0.923
-  Arrival (ns):                13.755
-  Required (ns):               14.678
+  Delay (ns):                  8.490
+  Slack (ns):                  1.059
+  Arrival (ns):                13.623
+  Required (ns):               14.682
   Setup (ns):                  0.435
-  Minimum Period (ns):         9.077
+  Minimum Period (ns):         8.941
 
 Path 5
-  From:                        pollSignal_0/count[14]:CLK
+  From:                        pollSignal_0/count[12]:CLK
   To:                          pollSignal_0/pollSignal:D
-  Delay (ns):                  8.564
-  Slack (ns):                  0.955
-  Arrival (ns):                13.723
-  Required (ns):               14.678
+  Delay (ns):                  8.480
+  Slack (ns):                  1.081
+  Arrival (ns):                13.601
+  Required (ns):               14.682
   Setup (ns):                  0.435
-  Minimum Period (ns):         9.045
+  Minimum Period (ns):         8.919
 
 
 Expanded Path 1
-  From: pollSignal_0/count[11]:CLK
+  From: pollSignal_0/count[7]:CLK
   To: pollSignal_0/pollSignal:D
-  data required time                             14.704
-  data arrival time                          -   13.890
-  slack                                          0.814
+  data required time                             14.682
+  data arrival time                          -   13.998
+  slack                                          0.684
   ________________________________________________________
   Data arrival time calculation
   0.000                        mss_ccc_gla1
@@ -123,42 +123,42 @@ Expanded Path 1
   4.630                        controller_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
                +     0.000          cell: ADLIB:MSS_CCC_GL_IF
   4.630                        controller_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
-               +     0.511          net: FAB_CLK
-  5.141                        pollSignal_0/count[11]:CLK (r)
+               +     0.516          net: FAB_CLK
+  5.146                        pollSignal_0/count[7]:CLK (r)
                +     0.559          cell: ADLIB:DFN1
-  5.700                        pollSignal_0/count[11]:Q (f)
-               +     1.135          net: pollSignal_0/count[11]
-  6.835                        pollSignal_0/count_RNIB42N[11]:A (f)
-               +     0.407          cell: ADLIB:OR2
-  7.242                        pollSignal_0/count_RNIB42N[11]:Y (f)
-               +     1.258          net: pollSignal_0/N_29
-  8.500                        pollSignal_0/pollSignal_RNO_85:B (f)
-               +     0.370          cell: ADLIB:NOR2A
-  8.870                        pollSignal_0/pollSignal_RNO_85:Y (r)
-               +     0.235          net: pollSignal_0/pollSignal_2_i_0_0_a2_12_0
-  9.105                        pollSignal_0/pollSignal_RNO_47:C (r)
-               +     0.398          cell: ADLIB:OA1A
-  9.503                        pollSignal_0/pollSignal_RNO_47:Y (r)
-               +     0.255          net: pollSignal_0/N_278
-  9.758                        pollSignal_0/pollSignal_RNO_18:B (r)
-               +     0.486          cell: ADLIB:NOR3
-  10.244                       pollSignal_0/pollSignal_RNO_18:Y (f)
-               +     0.775          net: pollSignal_0/pollSignal_2_i_0_0_a11_6_18
-  11.019                       pollSignal_0/pollSignal_RNO_5:C (f)
+  5.705                        pollSignal_0/count[7]:Q (f)
+               +     1.110          net: pollSignal_0/count[7]
+  6.815                        pollSignal_0/count_RNILTK2_0[8]:B (f)
+               +     0.479          cell: ADLIB:NOR2B
+  7.294                        pollSignal_0/count_RNILTK2_0[8]:Y (f)
+               +     0.761          net: pollSignal_0/N_335
+  8.055                        pollSignal_0/pollSignal_RNO_89:A (f)
+               +     0.293          cell: ADLIB:NOR2B
+  8.348                        pollSignal_0/pollSignal_RNO_89:Y (f)
+               +     0.971          net: pollSignal_0/un1_read6_1_i_0_0_a2_24_0_s
+  9.319                        pollSignal_0/pollSignal_RNO_52:B (f)
                +     0.486          cell: ADLIB:NOR3C
-  11.505                       pollSignal_0/pollSignal_RNO_5:Y (f)
-               +     0.706          net: pollSignal_0/pollSignal_2_i_0_0_a11_6_23
-  12.211                       pollSignal_0/pollSignal_RNO_0:C (f)
-               +     0.486          cell: ADLIB:NOR3C
-  12.697                       pollSignal_0/pollSignal_RNO_0:Y (f)
-               +     0.247          net: pollSignal_0/pollSignal_2_i_0_0_a11_6_26
-  12.944                       pollSignal_0/pollSignal_RNO:A (f)
-               +     0.691          cell: ADLIB:AOI1
-  13.635                       pollSignal_0/pollSignal_RNO:Y (r)
-               +     0.255          net: pollSignal_0/N_123
-  13.890                       pollSignal_0/pollSignal:D (r)
+  9.805                        pollSignal_0/pollSignal_RNO_52:Y (f)
+               +     0.247          net: pollSignal_0/N_305
+  10.052                       pollSignal_0/pollSignal_RNO_18:C (f)
+               +     0.570          cell: ADLIB:NOR3
+  10.622                       pollSignal_0/pollSignal_RNO_18:Y (r)
+               +     0.255          net: pollSignal_0/un1_m6_0_a2_18
+  10.877                       pollSignal_0/pollSignal_RNO_5:B (r)
+               +     0.473          cell: ADLIB:NOR3B
+  11.350                       pollSignal_0/pollSignal_RNO_5:Y (r)
+               +     0.487          net: pollSignal_0/un1_m6_0_a2_24_0
+  11.837                       pollSignal_0/pollSignal_RNO_0:C (r)
+               +     0.505          cell: ADLIB:NOR3C
+  12.342                       pollSignal_0/pollSignal_RNO_0:Y (r)
+               +     0.949          net: pollSignal_0/un1_m6_0_a2_27
+  13.291                       pollSignal_0/pollSignal_RNO:A (r)
+               +     0.460          cell: ADLIB:AOI1
+  13.751                       pollSignal_0/pollSignal_RNO:Y (f)
+               +     0.247          net: pollSignal_0/N_123
+  13.998                       pollSignal_0/pollSignal:D (f)
                                     
-  13.890                       data arrival time
+  13.998                       data arrival time
   ________________________________________________________
   Data required time calculation
   10.000                       mss_ccc_gla1
@@ -170,12 +170,12 @@ Expanded Path 1
   14.630                       controller_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
                +     0.000          cell: ADLIB:MSS_CCC_GL_IF
   14.630                       controller_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
-               +     0.483          net: FAB_CLK
-  15.113                       pollSignal_0/pollSignal:CLK (r)
-               -     0.409          Library setup time: ADLIB:DFN1E0
-  14.704                       pollSignal_0/pollSignal:D
+               +     0.487          net: FAB_CLK
+  15.117                       pollSignal_0/pollSignal:CLK (r)
+               -     0.435          Library setup time: ADLIB:DFN1E0
+  14.682                       pollSignal_0/pollSignal:D
                                     
-  14.704                       data required time
+  14.682                       data required time
 
 
 END SET Register to Register
@@ -187,19 +187,19 @@ SET External Setup
 Path 1
   From:                        data
   To:                          read_0/dataSync[1]:D
-  Delay (ns):                  2.102
+  Delay (ns):                  2.115
   Slack (ns):
-  Arrival (ns):                2.102
+  Arrival (ns):                2.115
   Required (ns):
   Setup (ns):                  0.435
-  External Setup (ns):         -2.618
+  External Setup (ns):         -2.595
 
 
 Expanded Path 1
   From: data
   To: read_0/dataSync[1]:D
   data required time                             N/C
-  data arrival time                          -   2.102
+  data arrival time                          -   2.115
   slack                                          N/C
   ________________________________________________________
   Data arrival time calculation
@@ -212,10 +212,10 @@ Expanded Path 1
   0.806                        data_pad/U0/U1:YIN (r)
                +     0.033          cell: ADLIB:IOIN_IB
   0.839                        data_pad/U0/U1:Y (r)
-               +     1.263          net: data_c
-  2.102                        read_0/dataSync[1]:D (r)
+               +     1.276          net: data_c
+  2.115                        read_0/dataSync[1]:D (r)
                                     
-  2.102                        data arrival time
+  2.115                        data arrival time
   ________________________________________________________
   Data required time calculation
   N/C                          mss_ccc_gla1
@@ -227,7 +227,7 @@ Expanded Path 1
   N/C                          controller_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
                +     0.000          cell: ADLIB:MSS_CCC_GL_IF
   N/C                          controller_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
-               +     0.525          net: FAB_CLK
+               +     0.515          net: FAB_CLK
   N/C                          read_0/dataSync[1]:CLK (r)
                -     0.435          Library setup time: ADLIB:DFN1
   N/C                          read_0/dataSync[1]:D
@@ -240,56 +240,56 @@ END SET External Setup
 SET Clock to Output
 
 Path 1
-  From:                        read_0/buttonData[2]:CLK
-  To:                          buttonData[2]
-  Delay (ns):                  5.632
+  From:                        read_0/sample:CLK
+  To:                          sample
+  Delay (ns):                  5.225
   Slack (ns):
-  Arrival (ns):                10.756
+  Arrival (ns):                10.370
   Required (ns):
-  Clock to Out (ns):           10.756
+  Clock to Out (ns):           10.370
 
 Path 2
-  From:                        read_0/buttonData[1]:CLK
-  To:                          buttonData[1]
-  Delay (ns):                  5.541
+  From:                        read_0/buttonData[2]:CLK
+  To:                          buttonData[2]
+  Delay (ns):                  5.142
   Slack (ns):
-  Arrival (ns):                10.661
+  Arrival (ns):                10.256
   Required (ns):
-  Clock to Out (ns):           10.661
+  Clock to Out (ns):           10.256
 
 Path 3
   From:                        pollSignal_0/read:CLK
   To:                          ready
-  Delay (ns):                  5.153
+  Delay (ns):                  5.080
   Slack (ns):
-  Arrival (ns):                10.304
+  Arrival (ns):                10.225
   Required (ns):
-  Clock to Out (ns):           10.304
+  Clock to Out (ns):           10.225
 
 Path 4
-  From:                        read_0/buttonData[0]:CLK
-  To:                          buttonData[0]
-  Delay (ns):                  4.991
+  From:                        pollSignal_0/pollSignal_cl:CLK
+  To:                          poll
+  Delay (ns):                  5.023
   Slack (ns):
-  Arrival (ns):                10.140
+  Arrival (ns):                10.172
   Required (ns):
-  Clock to Out (ns):           10.140
+  Clock to Out (ns):           10.172
 
 Path 5
-  From:                        pollSignal_0/pollSignal:CLK
-  To:                          poll
-  Delay (ns):                  4.925
+  From:                        read_0/buttonData[1]:CLK
+  To:                          buttonData[1]
+  Delay (ns):                  4.791
   Slack (ns):
-  Arrival (ns):                10.038
+  Arrival (ns):                9.905
   Required (ns):
-  Clock to Out (ns):           10.038
+  Clock to Out (ns):           9.905
 
 
 Expanded Path 1
-  From: read_0/buttonData[2]:CLK
-  To: buttonData[2]
+  From: read_0/sample:CLK
+  To: sample
   data required time                             N/C
-  data arrival time                          -   10.756
+  data arrival time                          -   10.370
   slack                                          N/C
   ________________________________________________________
   Data arrival time calculation
@@ -302,22 +302,22 @@ Expanded Path 1
   4.630                        controller_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
                +     0.000          cell: ADLIB:MSS_CCC_GL_IF
   4.630                        controller_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
-               +     0.494          net: FAB_CLK
-  5.124                        read_0/buttonData[2]:CLK (r)
-               +     0.559          cell: ADLIB:DFN1
-  5.683                        read_0/buttonData[2]:Q (f)
-               +     1.922          net: buttonData_c[2]
-  7.605                        buttonData_pad[2]/U0/U1:D (f)
+               +     0.515          net: FAB_CLK
+  5.145                        read_0/sample:CLK (r)
+               +     0.559          cell: ADLIB:DFN1E1
+  5.704                        read_0/sample:Q (f)
+               +     1.416          net: sample_c
+  7.120                        sample_pad/U0/U1:D (f)
                +     0.442          cell: ADLIB:IOTRI_OB_EB
-  8.047                        buttonData_pad[2]/U0/U1:DOUT (f)
-               +     0.000          net: buttonData_pad[2]/U0/NET1
-  8.047                        buttonData_pad[2]/U0/U0:D (f)
-               +     2.709          cell: ADLIB:IOPAD_TRI
-  10.756                       buttonData_pad[2]/U0/U0:PAD (f)
-               +     0.000          net: buttonData[2]
-  10.756                       buttonData[2] (f)
+  7.562                        sample_pad/U0/U1:DOUT (f)
+               +     0.000          net: sample_pad/U0/NET1
+  7.562                        sample_pad/U0/U0:D (f)
+               +     2.808          cell: ADLIB:IOPAD_TRI
+  10.370                       sample_pad/U0/U0:PAD (f)
+               +     0.000          net: sample
+  10.370                       sample (f)
                                     
-  10.756                       data arrival time
+  10.370                       data arrival time
   ________________________________________________________
   Data required time calculation
   N/C                          mss_ccc_gla1
@@ -326,7 +326,7 @@ Expanded Path 1
                +     4.630          Clock generation
   N/C
                                     
-  N/C                          buttonData[2] (f)
+  N/C                          sample (f)
 
 
 END SET Clock to Output

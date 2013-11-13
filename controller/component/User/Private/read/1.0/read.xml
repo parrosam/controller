@@ -91,8 +91,12 @@
       <spirit:signal>
         <spirit:name>buttonData</spirit:name>
         <spirit:direction>out</spirit:direction>
-        <spirit:left>6</spirit:left>
+        <spirit:left>4</spirit:left>
         <spirit:right>0</spirit:right>
+      </spirit:signal>
+      <spirit:signal>
+        <spirit:name>sample</spirit:name>
+        <spirit:direction>out</spirit:direction>
       </spirit:signal>
     </spirit:signals>
     <spirit:hwParameters>

@@ -324,7 +324,7 @@ always @(posedge PCLK)
 		begin
 			read <= 1;
 			count <= count + 1;
-			pollSignal <= 1;
+			pollSignal <= 1'bZ;
 		end
 		else
 			count <= 0;

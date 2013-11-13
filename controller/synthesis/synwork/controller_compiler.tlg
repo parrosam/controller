@@ -99,15 +99,19 @@ Selecting top level module controller
 @N: CG364 :"N:\373\controller\hdl\read.v":3:7:3:10|Synthesizing module read
 
 @W: CG133 :"N:\373\controller\hdl\read.v":15:19:15:24|No assignment to PRDATA
-@W: CL169 :"N:\373\controller\hdl\read.v":33:0:33:5|Pruning register Z 
+@W: CL169 :"N:\373\controller\hdl\read.v":34:0:34:5|Pruning register L 
 
-@W: CL169 :"N:\373\controller\hdl\read.v":33:0:33:5|Pruning register D_Up 
+@W: CL169 :"N:\373\controller\hdl\read.v":34:0:34:5|Pruning register R 
 
-@W: CL169 :"N:\373\controller\hdl\read.v":33:0:33:5|Pruning register D_Down 
+@W: CL169 :"N:\373\controller\hdl\read.v":34:0:34:5|Pruning register Z 
 
-@W: CL169 :"N:\373\controller\hdl\read.v":33:0:33:5|Pruning register D_Right 
+@W: CL169 :"N:\373\controller\hdl\read.v":34:0:34:5|Pruning register D_Up 
 
-@W: CL169 :"N:\373\controller\hdl\read.v":33:0:33:5|Pruning register D_Left 
+@W: CL169 :"N:\373\controller\hdl\read.v":34:0:34:5|Pruning register D_Down 
+
+@W: CL169 :"N:\373\controller\hdl\read.v":34:0:34:5|Pruning register D_Right 
+
+@W: CL169 :"N:\373\controller\hdl\read.v":34:0:34:5|Pruning register D_Left 
 
 @N: CG364 :"N:\373\controller\component\work\controller\controller.v":9:7:9:16|Synthesizing module controller
 

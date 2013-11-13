@@ -1,7 +1,7 @@
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Tue Nov 12 17:38:08 2013
+# Timing Report written on Tue Nov 12 19:04:43 2013
 #
 
 
@@ -28,7 +28,7 @@ Worst slack in design: NA
                    Requested     Estimated     Requested     Estimated                Clock        Clock      
 Starting Clock     Frequency     Frequency     Period        Period        Slack      Type         Group      
 --------------------------------------------------------------------------------------------------------------
-FAB_CLK            100.0 MHz     94.9 MHz      10.000        10.539        -0.539     declared     clk_group_0
+FAB_CLK            100.0 MHz     95.0 MHz      10.000        10.521        -0.521     declared     clk_group_0
 FCLK               100.0 MHz     NA            10.000        NA            NA         declared     clk_group_0
 ==============================================================================================================
 @W: MT511 :"n:/373/controller/component/work/controller_mss/mss_tshell_syn.sdc":2:0:2:0|Clock source n:controller_MSS_0.MSS_CCC_0.GLA0 not found in netlist: define_clock {n:controller_MSS_0.MSS_CCC_0.GLA0} -name {FCLK} -freq {100} -clockgroup {clk_group_0} 

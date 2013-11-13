@@ -17,7 +17,8 @@ module read(
 	//MODULE I/O
 	input ready,
 	input data, 
-	output reg [6:0] buttonData
+	output reg [4:0] buttonData,
+	output reg sample
 );
 
 assign PSLVERR = 0; //assumes no error generation 
@@ -26,19 +27,17 @@ assign PREADY = 1; //assumes zero wait
 
 reg[20:0] count;
 reg A, B, X, Y, Start, L, R, Z, D_Up, D_Down, D_Left, D_Right;
-reg [7:0] buttonCount;
+reg [4:0] buttonCount;
 reg [1:0] dataSync;
 
 //Associate each button with correct negedge
 always @(posedge PCLK)
 begin
-	buttonData[6] <= Start;
-	buttonData[5] <= Y;
-	buttonData[4] <= X;
-	buttonData[3] <= B;
-	buttonData[2] <= A;
-	buttonData[1] <= L;
-	buttonData[0] <= R;
+	buttonData[4] <= Start;
+	buttonData[3] <= Y;
+	buttonData[2] <= X;
+	buttonData[1] <= B;
+	buttonData[0] <= A;
 //	PRDATA[31] <= Start;
 //	PRDATA[30] <= Y;
 //	PRDATA[29] <= X;
@@ -57,10 +56,8 @@ begin
 	dataSync[1] <= data;
 	dataSync[0] <= dataSync[1];
 
-	if (~dataSync[1] && dataSync[0])
+	if (~dataSync[1] & dataSync[0])
 	begin
-		count <= 0;
-
 		if (ready)
 			buttonCount <= buttonCount + 1;
 		else
@@ -69,9 +66,15 @@ begin
 
 	if(ready)
 	begin
-		count <= count + 1;
-		if(count == 200)
+		if(~dataSync[1] & dataSync[0])
+			count <= 0;
+		else
+			count <= count + 1;
+
+		if(count >= 175 && count <= 225)
 		begin
+			sample <= 1;
+
 			if(buttonCount == 3)
 				Start <= dataSync[0];
 			else if(buttonCount == 4)
@@ -97,6 +100,8 @@ begin
 			else if(buttonCount == 15)
 				D_Left <= dataSync[0];
 		end
+		else
+			sample <= 0;
 	end
 end
 

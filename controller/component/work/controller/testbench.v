@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by Actel SmartDesign Tue Nov 12 17:36:32 2013
+// Created by Actel SmartDesign Tue Nov 12 18:55:49 2013
 // Testbench Template
 // This is a basic testbench that instantiates your design with basic 
 // clock and reset pins connected.  If your design has special
@@ -47,9 +47,10 @@ controller controller_0 (
     .data({1{1'b0}}),
 
     // Outputs
+    .ready( ),
     .poll( ),
-    .buttonData( ),
-    .ready( )
+    .sample( ),
+    .buttonData( )
 
     // Inouts
 

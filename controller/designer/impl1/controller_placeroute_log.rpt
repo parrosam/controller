@@ -33,16 +33,16 @@ Global net placement completed successfully.
 
                         o - o - o - o - o - o
 
-Timing-driven Placer Started: Tue Nov 12 17:38:22 2013
+Timing-driven Placer Started: Tue Nov 12 19:04:57 2013
 
-Placer Finished: Tue Nov 12 17:38:27 2013
+Placer Finished: Tue Nov 12 19:05:02 2013
 Total Placer CPU Time:     00:00:05
 
                         o - o - o - o - o - o
 
 
 Timing-driven Router 
-Design: controller                      Started: Tue Nov 12 17:38:29 2013
+Design: controller                      Started: Tue Nov 12 19:05:04 2013
 
  
 Iterative improvement...
@@ -50,7 +50,7 @@ Iterative improvement...
 Timing-driven Router completed successfully.
 
 Design: controller                      
-Finished: Tue Nov 12 17:38:38 2013
+Finished: Tue Nov 12 19:05:13 2013
 Total CPU Time:     00:00:08            Total Elapsed Time: 00:00:09
 Total Memory Usage: 150.4 Mbytes
                         o - o - o - o - o - o
