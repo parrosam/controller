@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Tue Nov 12 15:52:19 2013
+// Created by SmartDesign Mon Nov 18 17:55:55 2013
 // Version: v11.0 11.0.0.23
 //////////////////////////////////////////////////////////////////////
 
@@ -11,6 +11,7 @@ module controller_MSS(
     MSSPRDATA,
     MSSPREADY,
     MSSPSLVERR,
+    UART_0_RXD,
     // Outputs
     FAB_CLK,
     M2F_RESET_N,
@@ -18,7 +19,8 @@ module controller_MSS(
     MSSPENABLE,
     MSSPSEL,
     MSSPWDATA,
-    MSSPWRITE
+    MSSPWRITE,
+    UART_0_TXD
 );
 
 //--------------------------------------------------------------------
@@ -27,6 +29,7 @@ module controller_MSS(
 input  [31:0] MSSPRDATA;
 input         MSSPREADY;
 input         MSSPSLVERR;
+input         UART_0_RXD;
 //--------------------------------------------------------------------
 // Output
 //--------------------------------------------------------------------
@@ -37,6 +40,7 @@ output        MSSPENABLE;
 output        MSSPSEL;
 output [31:0] MSSPWDATA;
 output        MSSPWRITE;
+output        UART_0_TXD;
 //--------------------------------------------------------------------
 // Nets
 //--------------------------------------------------------------------
@@ -46,6 +50,8 @@ wire          MSS_ADLIB_INST_MACCLK;
 wire          MSS_ADLIB_INST_MACCLKCCC;
 wire          MSS_ADLIB_INST_PLLLOCK;
 wire          MSS_ADLIB_INST_SYNCCLKFDBK;
+wire          MSS_UART_0_RXD_Y;
+wire          MSS_UART_0_TXD_D;
 wire          net_71;
 wire   [19:0] net_72_PADDR;
 wire          net_72_PENABLE;
@@ -55,6 +61,8 @@ wire          net_72_PSELx;
 wire          MSSPSLVERR;
 wire   [31:0] net_72_PWDATA;
 wire          net_72_PWRITE;
+wire          UART_0_RXD;
+wire          UART_0_TXD_net_0;
 wire          MSS_ADLIB_INST_SYNCCLKFDBK_net_0;
 wire          net_72_PSELx_net_0;
 wire          net_72_PENABLE_net_0;
@@ -62,6 +70,7 @@ wire          net_72_PWRITE_net_0;
 wire          net_71_net_0;
 wire   [19:0] net_72_PADDR_net_0;
 wire   [31:0] net_72_PWDATA_net_0;
+wire          UART_0_TXD_net_1;
 //--------------------------------------------------------------------
 // TiedOff Nets
 //--------------------------------------------------------------------
@@ -103,6 +112,8 @@ assign net_72_PADDR_net_0               = net_72_PADDR;
 assign MSSPADDR[19:0]                   = net_72_PADDR_net_0;
 assign net_72_PWDATA_net_0              = net_72_PWDATA;
 assign MSSPWDATA[31:0]                  = net_72_PWDATA_net_0;
+assign UART_0_TXD_net_1                 = UART_0_TXD_net_0;
+assign UART_0_TXD                       = UART_0_TXD_net_1;
 //--------------------------------------------------------------------
 // Component instances
 //--------------------------------------------------------------------
@@ -176,7 +187,7 @@ MSS_ADLIB_INST(
         .SPI0DI         ( GND_net ), // tied to 1'b0 from definition
         .SPI0CLKI       ( GND_net ), // tied to 1'b0 from definition
         .SPI0SSI        ( GND_net ), // tied to 1'b0 from definition
-        .UART0RXD       ( GND_net ), // tied to 1'b0 from definition
+        .UART0RXD       ( MSS_UART_0_RXD_Y ),
         .I2C0SDAI       ( GND_net ), // tied to 1'b0 from definition
         .I2C0SCLI       ( GND_net ), // tied to 1'b0 from definition
         .SPI1DI         ( GND_net ), // tied to 1'b0 from definition
@@ -299,7 +310,7 @@ MSS_ADLIB_INST(
         .SPI0CLKO       (  ),
         .SPI0MODE       (  ),
         .SPI0SSO        (  ),
-        .UART0TXD       (  ),
+        .UART0TXD       ( MSS_UART_0_TXD_D ),
         .I2C0SDAO       (  ),
         .I2C0SCLO       (  ),
         .SPI1DO         (  ),
@@ -364,6 +375,28 @@ controller_MSS_tmp_MSS_CCC_0_MSS_CCC MSS_CCC_0(
         .MSS_LOCK       ( MSS_ADLIB_INST_PLLLOCK ),
         .MAC_CLK_CCC    ( MSS_ADLIB_INST_MACCLKCCC ),
         .MAC_CLK_IO     ( MSS_ADLIB_INST_MACCLK ) 
+        );
+
+//--------INBUF_MSS
+INBUF_MSS #( 
+        .ACT_CONFIG ( 0 ),
+        .ACT_PIN    ( "U18" ) )
+MSS_UART_0_RXD(
+        // Inputs
+        .PAD ( UART_0_RXD ),
+        // Outputs
+        .Y   ( MSS_UART_0_RXD_Y ) 
+        );
+
+//--------OUTBUF_MSS
+OUTBUF_MSS #( 
+        .ACT_CONFIG ( 0 ),
+        .ACT_PIN    ( "Y22" ) )
+MSS_UART_0_TXD(
+        // Inputs
+        .D   ( MSS_UART_0_TXD_D ),
+        // Outputs
+        .PAD ( UART_0_TXD_net_0 ) 
         );
 
 

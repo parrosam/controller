@@ -1,7 +1,7 @@
 #--  Synopsys, Inc.
 #--  Version G-2012.09M-SP1 
 #--  Project file N:\373\controller\synthesis\run_options.txt
-#--  Written on Tue Nov 12 19:04:36 2013
+#--  Written on Mon Nov 18 18:41:42 2013
 
 
 #project files
@@ -10,10 +10,10 @@ add_file -verilog "N:/373/controller/component/Actel/SmartFusionMSS/MSS/2.5.106/
 add_file -verilog "N:/373/controller/component/work/controller_MSS/MSS_CCC_0/controller_MSS_tmp_MSS_CCC_0_MSS_CCC.v"
 add_file -verilog "N:/373/controller/component/work/controller_MSS/controller_MSS.v"
 add_file -verilog "N:/373/controller/hdl/poll.v"
+add_file -verilog "N:/373/controller/hdl/read.v"
 add_file -verilog -lib COREAPB3_LIB "N:/373/controller/component/Actel/DirectCore/CoreAPB3/4.0.100/rtl/vlog/core_obfuscated/coreapb3_muxptob3.v"
 add_file -verilog -lib COREAPB3_LIB "N:/373/controller/component/Actel/DirectCore/CoreAPB3/4.0.100/rtl/vlog/core_obfuscated/coreapb3_iaddr_reg.v"
 add_file -verilog -lib COREAPB3_LIB "N:/373/controller/component/Actel/DirectCore/CoreAPB3/4.0.100/rtl/vlog/core_obfuscated/coreapb3.v"
-add_file -verilog "N:/373/controller/hdl/read.v"
 add_file -verilog "N:/373/controller/component/work/controller/controller.v"
 add_file -constraint "N:/373/controller/component/work/controller_MSS/mss_tshell_syn.sdc"
 

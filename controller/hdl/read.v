@@ -17,19 +17,21 @@ module read(
 	//MODULE I/O
 	input ready,
 	input data, 
-	output reg [4:0] buttonData,
+	output reg [4:0]buttonData,
 	output reg sample
 );
 
 assign PSLVERR = 0; //assumes no error generation 
 assign PREADY = 1; //assumes zero wait 
+
 //assign buttonData[7:0] = PRDATA[31:24];
 
-reg[20:0] count;
 reg A, B, X, Y, Start, L, R, Z, D_Up, D_Down, D_Left, D_Right;
-reg [4:0] buttonCount;
-reg [1:0] dataSync;
+reg [7:0] Joystick_X, Joystick_Y;
 
+reg [20:0] count;			//Count cycles after each negedge of data
+reg [7:0] buttonCount;		//Counts number of negedges
+reg [1:0] dataSync;	//Synchronizes data input 
 //Associate each button with correct negedge
 always @(posedge PCLK)
 begin
@@ -38,21 +40,27 @@ begin
 	buttonData[2] <= X;
 	buttonData[1] <= B;
 	buttonData[0] <= A;
-//	PRDATA[31] <= Start;
-//	PRDATA[30] <= Y;
-//	PRDATA[29] <= X;
-//	PRDATA[28] <= B;
-//	PRDATA[27] <= A;
-//	PRDATA[26] <= L;
-//	PRDATA[25] <= R;
-//	PRDATA[24] <= Z;
-//	PRDATA[23] <= D_Up;
-//	PRDATA[22] <= D_Down;
-//	PRDATA[21] <= D_Left;
-//	PRDATA[20] <= D_Right;
-//	PRDATA[19:0] <= 0;
+
+	//Bit assignment matches order in section "Polling the Controller for Joystick/Button Data" at http://www.int03.co.uk/crema/hardware/gamecube/gc-control.html
 	
-	//Detect a negedge on data
+	PRDATA[31:29] <= 0;
+	PRDATA[28] <= Start;
+	PRDATA[27] <= Y;
+	PRDATA[26] <= X;
+	PRDATA[25] <= B;
+	PRDATA[24] <= A;
+	PRDATA[23] <= 0;
+	PRDATA[22] <= L;
+	PRDATA[21] <= R;
+	PRDATA[20] <= Z;
+	PRDATA[19] <= D_Up;
+	PRDATA[18] <= D_Down;
+	PRDATA[17] <= D_Right;
+	PRDATA[16] <= D_Left;
+	PRDATA[15:8] <= Joystick_X[7:0];
+	PRDATA[7:0] <= Joystick_Y[7:0];
+	
+	//Detect a negedge on data and increment button count if detected and module has received ready signal
 	dataSync[1] <= data;
 	dataSync[0] <= dataSync[1];
 
@@ -64,14 +72,15 @@ begin
 			buttonCount <= 0;
 	end
 
+	//Sample data in the middle of each bit
 	if(ready)
 	begin
-		if(~dataSync[1] & dataSync[0])
+		if(~dataSync[1] & dataSync[0])			//Increment count after each negedge
 			count <= 0;
 		else
 			count <= count + 1;
 
-		if(count >= 175 && count <= 225)
+		if(count >= 190 && count <= 210)		//Sample in the middle (count goes up to 400)
 		begin
 			sample <= 1;
 
@@ -99,9 +108,43 @@ begin
 				D_Right <= dataSync[0];
 			else if(buttonCount == 15)
 				D_Left <= dataSync[0];
+			else if(buttonCount == 16)
+				Joystick_X[7] <= dataSync[0];
+			else if(buttonCount == 17)
+				Joystick_X[6] <= dataSync[0];
+			else if(buttonCount == 18)
+				Joystick_X[5] <= dataSync[0];
+			else if(buttonCount == 19)
+				Joystick_X[4] <= dataSync[0];
+			else if(buttonCount == 20)
+				Joystick_X[3] <= dataSync[0];
+			else if(buttonCount == 21)
+				Joystick_X[2] <= dataSync[0];
+			else if(buttonCount == 22)
+				Joystick_X[1] <= dataSync[0];
+			else if(buttonCount == 23)
+				Joystick_X[0] <= dataSync[0];
+			else if(buttonCount == 24)
+				Joystick_Y[7] <= dataSync[0];
+			else if(buttonCount == 25)
+				Joystick_Y[6] <= dataSync[0];
+			else if(buttonCount == 26)
+				Joystick_Y[5] <= dataSync[0];
+			else if(buttonCount == 27)
+				Joystick_Y[4] <= dataSync[0];
+			else if(buttonCount == 28)
+				Joystick_Y[3] <= dataSync[0];
+			else if(buttonCount == 29)
+				Joystick_Y[2] <= dataSync[0];
+			else if(buttonCount == 30)
+				Joystick_Y[1] <= dataSync[0];
+			else if(buttonCount == 31)
+				Joystick_Y[0] <= dataSync[0];
 		end
 		else
+		begin
 			sample <= 0;
+		end
 	end
 end
 

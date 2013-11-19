@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by Actel SmartDesign Tue Nov 12 18:55:49 2013
+// Created by Actel SmartDesign Mon Nov 18 18:39:36 2013
 // Testbench Template
 // This is a basic testbench that instantiates your design with basic 
 // clock and reset pins connected.  If your design has special
@@ -45,12 +45,14 @@ always @(SYSCLK)
 controller controller_0 (
     // Inputs
     .data({1{1'b0}}),
+    .UART_0_RXD({1{1'b0}}),
 
     // Outputs
     .ready( ),
     .poll( ),
     .sample( ),
-    .buttonData( )
+    .buttonData( ),
+    .UART_0_TXD( )
 
     // Inouts
 

@@ -33,16 +33,16 @@ Global net placement completed successfully.
 
                         o - o - o - o - o - o
 
-Timing-driven Placer Started: Tue Nov 12 19:04:57 2013
+Timing-driven Placer Started: Mon Nov 18 18:42:10 2013
 
-Placer Finished: Tue Nov 12 19:05:02 2013
-Total Placer CPU Time:     00:00:05
+Placer Finished: Mon Nov 18 18:42:17 2013
+Total Placer CPU Time:     00:00:07
 
                         o - o - o - o - o - o
 
 
 Timing-driven Router 
-Design: controller                      Started: Tue Nov 12 19:05:04 2013
+Design: controller                      Started: Mon Nov 18 18:42:21 2013
 
  
 Iterative improvement...
@@ -50,9 +50,9 @@ Iterative improvement...
 Timing-driven Router completed successfully.
 
 Design: controller                      
-Finished: Tue Nov 12 19:05:13 2013
-Total CPU Time:     00:00:08            Total Elapsed Time: 00:00:09
-Total Memory Usage: 150.4 Mbytes
+Finished: Mon Nov 18 18:42:32 2013
+Total CPU Time:     00:00:11            Total Elapsed Time: 00:00:11
+Total Memory Usage: 154.3 Mbytes
                         o - o - o - o - o - o
 
 Loading the Timing data for the design.
@@ -60,7 +60,7 @@ Finished loading the Timing data.
 TIMER: Max delay timing requirements have been met.
 TIMER: Min delay timing requirements have been met.
 
-The Layout command succeeded ( 00:00:20 )
+The Layout command succeeded ( 00:00:28 )
 Wrote status report to file: controller_place_and_route_report.txt
 
 The Report command succeeded ( 00:00:00 )
@@ -75,6 +75,6 @@ Wrote iobank report to file: controller_iobank_report.txt
 The Report command succeeded ( 00:00:00 )
 Design saved to file N:\373\controller\designer\impl1\controller.adb.
 
-The Execute Script command succeeded ( 00:00:23 )
+The Execute Script command succeeded ( 00:00:32 )
 Design closed.
 

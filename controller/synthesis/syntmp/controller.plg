@@ -1,29 +1,41 @@
-@P:  Worst Slack : -0.521
-@P:  FAB_CLK - Estimated Frequency : 95.0 MHz
+@P:  Worst Slack : -0.722
+@P:  FAB_CLK - Estimated Frequency : 93.3 MHz
 @P:  FAB_CLK - Requested Frequency : 100.0 MHz
-@P:  FAB_CLK - Estimated Period : 10.521
+@P:  FAB_CLK - Estimated Period : 10.722
 @P:  FAB_CLK - Requested Period : 10.000
-@P:  FAB_CLK - Slack : -0.521
+@P:  FAB_CLK - Slack : -0.722
 @P:  FCLK - Estimated Frequency : NA
 @P:  FCLK - Requested Frequency : 100.0 MHz
 @P:  FCLK - Estimated Period : NA
 @P:  FCLK - Requested Period : 10.000
 @P:  FCLK - Slack : NA
-@P:  Worst Slack(min analysis) : NA
-@P:  FAB_CLK - Estimated Frequency(min analysis) : 95.0 MHz
+@P:  System - Estimated Frequency : 207.9 MHz
+@P:  System - Requested Frequency : 100.0 MHz
+@P:  System - Estimated Period : 4.811
+@P:  System - Requested Period : 10.000
+@P:  System - Slack : 5.189
+@P:  Worst Slack(min analysis) : 0.192
+@P:  FAB_CLK - Estimated Frequency(min analysis) : 93.3 MHz
 @P:  FAB_CLK - Requested Frequency(min analysis) : 100.0 MHz
-@P:  FAB_CLK - Estimated Period(min analysis) : 10.521
+@P:  FAB_CLK - Estimated Period(min analysis) : 10.722
 @P:  FAB_CLK - Requested Period(min analysis) : 10.000
-@P:  FAB_CLK - Slack(min analysis) : -0.521
+@P:  FAB_CLK - Slack(min analysis) : -0.722
 @P:  FCLK - Estimated Frequency(min analysis) : NA
 @P:  FCLK - Requested Frequency(min analysis) : 100.0 MHz
 @P:  FCLK - Estimated Period(min analysis) : NA
 @P:  FCLK - Requested Period(min analysis) : 10.000
 @P:  FCLK - Slack(min analysis) : NA
-@P:  Total Area : 416.0
-@P:  Total Area : 167.0
-@P:  Total Area : 249.0
+@P:  System - Estimated Frequency(min analysis) : 207.9 MHz
+@P:  System - Requested Frequency(min analysis) : 100.0 MHz
+@P:  System - Estimated Period(min analysis) : 4.811
+@P:  System - Requested Period(min analysis) : 10.000
+@P:  System - Slack(min analysis) : 5.189
+@P:  Total Area : 535.0
+@P:  Total Area : 252.0
+@P:  Total Area : 251.0
+@P:  Total Area : 31.0
+@P:  Total Area : 28.0
+@P:  Total Area : 1.0
 @P:  Total Area : 0.0
-@P:  Total Area : 0.0
-@P:  Total Area : 416.0
+@P:  Total Area : 535.0
 @P:  CPU Time : 0h:00m:01s

@@ -11,6 +11,10 @@ Selecting top level module controller
 
 @N: CG364 :"N:\373\controller\component\work\controller_MSS\MSS_CCC_0\controller_MSS_tmp_MSS_CCC_0_MSS_CCC.v":5:7:5:42|Synthesizing module controller_MSS_tmp_MSS_CCC_0_MSS_CCC
 
+@N: CG364 :"N:\373\controller\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v":23:7:23:15|Synthesizing module INBUF_MSS
+
+@N: CG364 :"N:\373\controller\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v":37:7:37:16|Synthesizing module OUTBUF_MSS
+
 @N: CG364 :"N:\373\controller\component\work\controller_MSS\controller_MSS.v":9:7:9:20|Synthesizing module controller_MSS
 
 @W: CG775 :"N:\373\controller\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":13:0:13:7|Found Component CoreAPB3 in library COREAPB3_LIB
@@ -52,8 +56,8 @@ Selecting top level module controller
 	SC_13=1'b0
 	SC_14=1'b0
 	SC_15=1'b0
-	MADDR_BITS=6'b011100
-	UPR_NIBBLE_POSN=4'b0110
+	MADDR_BITS=6'b001100
+	UPR_NIBBLE_POSN=4'b0010
 	CAPB3I1I=32'b00000000000000000000000000000000
 	CAPB3l1I=32'b00000000000000000000000000000001
 	CAPB3OOl=32'b00000000000000000000000000000010
@@ -98,24 +102,17 @@ Selecting top level module controller
 
 @N: CG364 :"N:\373\controller\hdl\read.v":3:7:3:10|Synthesizing module read
 
-@W: CG133 :"N:\373\controller\hdl\read.v":15:19:15:24|No assignment to PRDATA
-@W: CL169 :"N:\373\controller\hdl\read.v":34:0:34:5|Pruning register L 
+@W: CL189 :"N:\373\controller\hdl\read.v":36:0:36:5|Register bit PRDATA[31] is always 0, optimizing ...
+@W: CL189 :"N:\373\controller\hdl\read.v":36:0:36:5|Register bit PRDATA[30] is always 0, optimizing ...
+@W: CL189 :"N:\373\controller\hdl\read.v":36:0:36:5|Register bit PRDATA[29] is always 0, optimizing ...
+@W: CL189 :"N:\373\controller\hdl\read.v":36:0:36:5|Register bit PRDATA[23] is always 0, optimizing ...
+@N: CL177 :"N:\373\controller\hdl\read.v":36:0:36:5|Sharing sequential element buttonData.
+@W: CL279 :"N:\373\controller\hdl\read.v":36:0:36:5|Pruning register bits 31 to 29 of PRDATA[31:0] 
 
-@W: CL169 :"N:\373\controller\hdl\read.v":34:0:34:5|Pruning register R 
-
-@W: CL169 :"N:\373\controller\hdl\read.v":34:0:34:5|Pruning register Z 
-
-@W: CL169 :"N:\373\controller\hdl\read.v":34:0:34:5|Pruning register D_Up 
-
-@W: CL169 :"N:\373\controller\hdl\read.v":34:0:34:5|Pruning register D_Down 
-
-@W: CL169 :"N:\373\controller\hdl\read.v":34:0:34:5|Pruning register D_Right 
-
-@W: CL169 :"N:\373\controller\hdl\read.v":34:0:34:5|Pruning register D_Left 
+@W: CL260 :"N:\373\controller\hdl\read.v":36:0:36:5|Pruning register bit 23 of PRDATA[31:0] 
 
 @N: CG364 :"N:\373\controller\component\work\controller\controller.v":9:7:9:16|Synthesizing module controller
 
-@A: CL153 :"N:\373\controller\hdl\read.v":15:19:15:24|*Unassigned bits of PRDATA[31:0] are referenced and tied to 0 -- simulation mismatch possible.
 @W: CL159 :"N:\373\controller\hdl\read.v":5:7:5:13|Input PRESERN is unused
 @W: CL159 :"N:\373\controller\hdl\read.v":8:7:8:10|Input PSEL is unused
 @W: CL159 :"N:\373\controller\hdl\read.v":9:7:9:13|Input PENABLE is unused

@@ -23,6 +23,7 @@ KEY IDE_DES_ERROR_FOUND "FALSE"
 KEY IDE_DES_ADB_PATH "N:\373\controller\designer\impl1\controller.adb"
 LIST SOURCE_FILES
 VALUE "N:\373\controller\synthesis\controller.edn;edn"
+VALUE "N:\373\controller\component\work\controller\controller.pdc;pdc"
 ENDLIST
 LIST OPTIONAL_FILES
 ENDLIST

@@ -1,5 +1,5 @@
 //--------------------------------------------------------------------
-// Created by Actel SmartDesign Tue Nov 12 18:55:48 2013
+// Created by Actel SmartDesign Mon Nov 18 18:39:35 2013
 // Parameters for CoreAPB3
 //--------------------------------------------------------------------
 
@@ -23,7 +23,7 @@ parameter APBSLOT14ENABLE = 0;
 parameter APBSLOT15ENABLE = 0;
 parameter HDL_license = "O";
 parameter IADDR_OPTION = 0;
-parameter MADDR_BITS = 28;
+parameter MADDR_BITS = 12;
 parameter SC_0 = 0;
 parameter SC_1 = 0;
 parameter SC_2 = 0;
@@ -41,4 +41,4 @@ parameter SC_13 = 0;
 parameter SC_14 = 0;
 parameter SC_15 = 0;
 parameter testbench = "User";
-parameter UPR_NIBBLE_POSN = 6;
+parameter UPR_NIBBLE_POSN = 2;

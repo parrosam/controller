@@ -6,11 +6,11 @@ Info: The design N:/373/controller/designer/impl1/controller.adb was last modifi
       version 11.0.0.23.
 Opened an existing Libero design N:/373/controller/designer/impl1/controller.adb.
 
-The Export-map command succeeded ( 00:00:12 )
-CHECKSUM: 4CD7
+The Export-map command succeeded ( 00:00:11 )
+CHECKSUM: 9647
 Wrote to the file: N:\373\controller\designer\impl1\controller.fdb
 
-The Export command succeeded ( 00:00:14 )
+The Export command succeeded ( 00:00:15 )
 Design saved to file N:/373/controller/designer/impl1/controller.adb.
 
 The Execute Script command succeeded ( 00:00:17 )

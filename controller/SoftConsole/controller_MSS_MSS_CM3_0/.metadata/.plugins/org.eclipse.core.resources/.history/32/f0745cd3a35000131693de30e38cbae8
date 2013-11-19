@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include "drivers/mss_uart/mss_uart.h"
+
+#define CONTROLLER_ADDR (FPGA_FABRIC_BASE)
+
+typedef struct{
+	uint32_t buttons;
+} mycontroller_t;
+
+#define MYCONTROLLER ((mycontroller_t *) CONTROLLER_ADDR)
+
+
+int main()
+{
+
+
+	while( 1 )
+	{
+		//uint32_t buttons = *controller_addr;
+		printf("buttons: %lu\r\n", MYCONTROLLER->buttons);
+	}
+}

@@ -1,2 +1,2 @@
-@E: CL172 :"N:\373\controller\hdl\read.v":27:10:27:14|Only one always block can assign a given variable count[20:0]
+@E: CS101 :"N:\373\controller\hdl\read.v":41:11:41:11|Index 4 is out of range for variable buttonData
 

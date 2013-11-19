@@ -1,0 +1,56 @@
+#include <stdio.h>
+#include "drivers/mss_uart/mss_uart.h"
+
+#define CONTROLLER_ADDR 0x40050000
+/*
+typedef struct{
+	volatile uint32_t buttons;
+} mycontroller_t;
+
+#define MYCONTROLLER ((mycontroller_t *) CONTROLLER_ADDR)
+*/
+
+void printButtons(uint32_t buttonPack){
+	uint8_t joystickY = (buttonPack & 0xFF);
+	uint8_t joystickX = ((buttonPack >> 8) & 0xFF);
+
+	uint8_t lrzd = ((buttonPack >> 16) & 0xFF);
+	uint8_t abxyStart = ((buttonPack >> 24) & 0xFF);
+
+	printf("Joystick X Position: %d\r\n", joystickX);
+	printf("Joystick Y Position: %d\r\n", joystickY);
+
+	printf("A: %d ", (abxyStart & 0x1));
+	printf("B: %d ", ((abxyStart >> 1)  & 0x1) );
+	/*
+	printf("C: %d ", (abxyStart & 0x1));
+	printf("D: %d ", (abxyStart & 0x1));
+	printf("Start: %d ", (abxyStart & 0x1));
+	printf("L: %d ", (abxyStart & 0x1));
+	printf("R: %d ", (abxyStart & 0x1));
+	printf("D-up: %d ", (abxyStart & 0x1));
+	printf("D-down: %d ", (abxyStart & 0x1));
+	printf("D-right: %d ", (abxyStart & 0x1));
+	printf("D-left: %d ", (abxyStart & 0x1));*/
+
+
+
+
+
+}
+
+int main()
+{
+
+	uint32_t *controller = (uint32_t *) CONTROLLER_ADDR;
+
+	while( 1 )
+	{
+		uint32_t buttons = *controller;
+		//printf("buttons: %lu\r\n", buttons);
+
+		printButtons(buttons);
+		volatile int i;
+		for(i = 0; i < 100; i++);
+	}
+}

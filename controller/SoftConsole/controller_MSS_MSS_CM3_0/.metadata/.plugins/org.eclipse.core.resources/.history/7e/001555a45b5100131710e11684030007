@@ -1,0 +1,110 @@
+#include <stdio.h>
+#include "drivers/mss_uart/mss_uart.h"
+
+#define CONTROLLER_ADDR 0x40050000
+/*
+typedef struct{
+	volatile uint32_t buttons;
+} mycontroller_t;
+
+#define MYCONTROLLER ((mycontroller_t *) CONTROLLER_ADDR)
+*/
+
+uint8_t getA(uint32_t buttons){
+	return (buttons >> 24) & 0x1;
+}
+
+uint8_t getB(uint32_t buttons){
+	return (buttons >> 25) & 0x1;
+}
+
+uint8_t getX(uint32_t buttons){
+	return (buttons >> 26) & 0x1;
+}
+
+uint8_t getY(uint32_t buttons){
+	return (buttons >> 27) & 0x1;
+}
+
+uint8_t getStart(uint32_t buttons){
+	return (buttons >> 28) & 0x1;
+}
+
+uint8_t getL(uint32_t buttons){
+	return (buttons >> 22) & 0x1;
+}
+
+uint8_t getR(uint32_t buttons){
+	return (buttons >> 21) & 0x1;
+}
+
+uint8_t getZ(uint32_t buttons){
+	return (buttons >> 20) & 0x1;
+}
+
+uint8_t getDUP(uint32_t buttons){
+	return (buttons >> 19) & 0x1;
+}
+
+uint8_t getDDOWN(uint32_t buttons){
+	return (buttons >> 18) & 0x1;
+}
+
+uint8_t getDRIGHT(uint32_t buttons){
+	return (buttons >> 17) & 0x1;
+}
+
+uint8_t getDLEFT(uint32_t buttons){
+	return (buttons >> 16) & 0x1;
+}
+
+uint8_t getJoyY(uint32_t buttons){
+	return buttons & 0xFF;
+}
+
+uint8_t getJoyX(uint32_t buttons){
+	return (buttons >> 8) & 0xFF;
+}
+
+
+
+void printButtons(uint32_t buttonPack){
+	uint8_t joystickY = (buttonPack & 0xFF);
+	uint8_t joystickX = ((buttonPack >> 8) & 0xFF);
+
+	uint8_t lrzd = ((buttonPack >> 16) & 0xFF);
+	uint8_t abxyStart = ((buttonPack >> 24) & 0xFF);
+
+	printf("Joystick X Position: %d ", joystickX);
+	printf("Joystick Y Position: %d ", joystickY);
+
+	printf("A: %d ", (abxyStart & 0x1));
+	printf("B: %d ", ((abxyStart >> 1)  & 0x1) );
+	printf("X: %d ", ((abxyStart >> 2) & 0x1));
+	printf("Y: %d ", ((abxyStart >> 3) & 0x1));
+	printf("Start: %d ", ((abxyStart >> 4) & 0x1));
+	printf("L: %d ", ((lrzd >> 6)  & 0x1));
+	printf("R: %d ", ((lrzd >> 5) & 0x1));
+	printf("Z: %d ", ((lrzd >> 4) & 0x1));
+	printf("D-up: %d ", ((lrzd >> 3) & 0x1));
+	printf("D-down: %d ", ((lrzd >> 2) & 0x1));
+	printf("D-right: %d ", ((lrzd >> 1) & 0x1));
+	printf("D-left: %d\r\n", (lrzd & 0x1));
+
+}
+
+int main()
+{
+
+	uint32_t *controller = (uint32_t *) CONTROLLER_ADDR;
+
+	while( 1 )
+	{
+		uint32_t buttons = *controller;
+		//printf("buttons: %lu\r\n", buttons);
+
+		printButtons(buttons);
+		volatile int i;
+		for(i = 0; i < 100; i++);
+	}
+}
