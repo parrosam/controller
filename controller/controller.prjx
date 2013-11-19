@@ -43,13 +43,13 @@ ENDLIST
 LIST FileManager
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.0.100\CoreAPB3.cxf,actgen_cxf"
 STATE="utd"
-TIME="1384817975"
+TIME="1384897291"
 SIZE="2783"
 PARENT="<project>\component\work\controller\controller.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.0.100\coreparameters.v,tb_hdl"
 STATE="utd"
-TIME="1384817976"
+TIME="1384897291"
 SIZE="1256"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.0.100\CoreAPB3.cxf"
 IS_READONLY="TRUE"
@@ -240,13 +240,13 @@ PARENT="<project>\component\work\controller_MSS\controller_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\work\controller\controller.cxf,actgen_cxf"
 STATE="utd"
-TIME="1384817999"
-SIZE="4307"
+TIME="1384897349"
+SIZE="3738"
 ENDFILE
 VALUE "<project>\component\work\controller\controller.pdc,pdc"
 STATE="utd"
-TIME="1384817975"
-SIZE="1174"
+TIME="1384897289"
+SIZE="1430"
 PARENT="<project>\component\work\controller\controller.cxf"
 BEGIN_USE_CONSTRAINT
 TOOL_CONSTRAINT_TYPE="ideDESIGNER"
@@ -256,15 +256,15 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\controller\controller.v,hdl"
 STATE="utd"
-TIME="1384817976"
-SIZE="14177"
+TIME="1384897295"
+SIZE="13538"
 PARENT="<project>\component\work\controller\controller.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\controller\testbench.v,tb_hdl"
 STATE="utd"
-TIME="1384817976"
-SIZE="1553"
+TIME="1384897295"
+SIZE="1476"
 PARENT="<project>\component\work\controller\controller.cxf"
 IS_READONLY="TRUE"
 ENDFILE
@@ -359,8 +359,8 @@ SIZE="764928"
 ENDFILE
 VALUE "<project>\designer\impl1\controller.fdb,fdb"
 STATE="utd"
-TIME="1384818182"
-SIZE="60904"
+TIME="1384897511"
+SIZE="60827"
 ENDFILE
 VALUE "<project>\designer\impl1\controller.ide_des,ide_des"
 STATE="utd"
@@ -369,8 +369,8 @@ SIZE="1005"
 ENDFILE
 VALUE "<project>\designer\impl1\controller_compile_log.rpt,log"
 STATE="utd"
-TIME="1384818123"
-SIZE="35021"
+TIME="1384897431"
+SIZE="34975"
 ENDFILE
 VALUE "<project>\designer\impl1\controller_fp\controller.pdb,pdb"
 STATE="utd"
@@ -384,22 +384,22 @@ SIZE="1938"
 ENDFILE
 VALUE "<project>\designer\impl1\controller_fp\projectData\controller.pdb,pdb"
 STATE="utd"
-TIME="1384818248"
-SIZE="70656"
+TIME="1384897591"
+SIZE="70144"
 ENDFILE
 VALUE "<project>\designer\impl1\controller_placeroute_log.rpt,log"
 STATE="utd"
-TIME="1384818158"
+TIME="1384897472"
 SIZE="2405"
 ENDFILE
 VALUE "<project>\designer\impl1\controller_prgdata_log.rpt,log"
 STATE="utd"
-TIME="1384818184"
+TIME="1384897517"
 SIZE="588"
 ENDFILE
 VALUE "<project>\designer\impl1\controller_verifytiming_log.rpt,log"
 STATE="utd"
-TIME="1384818165"
+TIME="1384897482"
 SIZE="1124"
 ENDFILE
 VALUE "<project>\hdl\controller.v,hdl"
@@ -409,13 +409,13 @@ SIZE="6801"
 ENDFILE
 VALUE "<project>\hdl\poll.v,hdl"
 STATE="utd"
-TIME="1384297475"
-SIZE="5339"
+TIME="1384895138"
+SIZE="5333"
 ENDFILE
 VALUE "<project>\hdl\read.v,hdl"
 STATE="utd"
-TIME="1384817856"
-SIZE="4346"
+TIME="1384897140"
+SIZE="3888"
 ENDFILE
 VALUE "<project>\simulation\bfmtovec_compile.tcl,sim"
 STATE="utd"
@@ -437,7 +437,7 @@ PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.0.100\CoreAPB3.cxf"
 ENDFILE
 VALUE "<project>\simulation\subsystem.bfm,sim"
 STATE="utd"
-TIME="1384817977"
+TIME="1384897296"
 SIZE="625"
 PARENT="<project>\component\work\controller\controller.cxf"
 ENDFILE
@@ -559,17 +559,6 @@ VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\amba_bfm\b
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\amba_bfm\bfm_apbslave.v,tb_hdl"
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\test\user\testbench.v,tb_hdl"
 ENDLIST
-LIST ProjectState5.1
-LIST Impl1
-ideSTIMULUS=StateSuccess
-LIST FlowOptions
-UsePhySynth=FALSE
-UseSynth=TRUE
-ENDLIST
-Used_File_List
-ENDUsed_File_List
-ENDLIST
-ENDLIST
 ENDLIST
 ENDLIST
 LIST AssociatedStimulus
@@ -668,8 +657,8 @@ NAME="Synplify Pro AE"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro AE"
 LOCATION="C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\bin\synplify_pro.exe"
-PARAM=""
-BATCH=0
+PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
+BATCH=1
 EndProfile
 NAME="ModelSim AE"
 FUNCTION="Simulation"
@@ -702,17 +691,6 @@ ENDUsed_File_List
 ENDLIST
 ENDLIST
 LIST "controller_MSS::work"
-LIST Impl1
-ideSTIMULUS=StateSuccess
-LIST FlowOptions
-UsePhySynth=FALSE
-UseSynth=TRUE
-ENDLIST
-Used_File_List
-ENDUsed_File_List
-ENDLIST
-ENDLIST
-LIST "CoreAPB3::COREAPB3_LIB"
 LIST Impl1
 ideSTIMULUS=StateSuccess
 LIST FlowOptions

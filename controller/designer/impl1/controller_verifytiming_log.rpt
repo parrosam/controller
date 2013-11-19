@@ -19,12 +19,12 @@ Wrote timing report to file: controller_mindelay_timing_report.txt
 The Report command succeeded ( 00:00:00 )
 Wrote timing_violations report to file: controller_maxdelay_timingviolations_report.txt
 
-The Report command succeeded ( 00:00:00 )
+The Report command succeeded ( 00:00:01 )
 Wrote timing_violations report to file: controller_mindelay_timingviolations_report.txt
 
 The Report command succeeded ( 00:00:00 )
 Design saved to file N:\373\controller\designer\impl1\controller.adb.
 
-The Execute Script command succeeded ( 00:00:05 )
+The Execute Script command succeeded ( 00:00:06 )
 Design closed.
 

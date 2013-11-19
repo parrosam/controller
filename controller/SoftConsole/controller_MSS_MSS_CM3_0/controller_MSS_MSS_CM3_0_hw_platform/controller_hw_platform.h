@@ -2,7 +2,7 @@
 #define controller_HW_PLATFORM_H_
 /*****************************************************************************
 *
-*Created by Actel SmartDesign  Mon Nov 18 18:39:42 2013
+*Created by Actel SmartDesign  Tue Nov 19 16:41:44 2013
 *
 *Memory map specification for peripherals in controller
 */

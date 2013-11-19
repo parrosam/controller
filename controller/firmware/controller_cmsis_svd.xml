@@ -2,7 +2,7 @@
 <device>
   <name>controller</name>
   <version>1.0</version>
-  <description>CMSIS description for controller.  Created by Actel SmartDesign on Mon Nov 18 18:39:42 2013</description>
+  <description>CMSIS description for controller.  Created by Actel SmartDesign on Tue Nov 19 16:41:44 2013</description>
   <addressUnitBits>8</addressUnitBits>
   <width>32</width>
   <peripherals>

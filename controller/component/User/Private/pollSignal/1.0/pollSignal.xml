@@ -17,7 +17,7 @@
       </spirit:signal>
       <spirit:signal>
         <spirit:name>poll</spirit:name>
-        <spirit:direction>out</spirit:direction>
+        <spirit:direction>inout</spirit:direction>
       </spirit:signal>
       <spirit:signal>
         <spirit:name>read</spirit:name>

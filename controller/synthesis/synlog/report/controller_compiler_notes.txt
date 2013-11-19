@@ -12,6 +12,5 @@
 @N: CG364 :"N:\373\controller\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":13:0:13:7|Synthesizing module CoreAPB3
 @N: CG364 :"N:\373\controller\hdl\poll.v":2:7:2:16|Synthesizing module pollSignal
 @N: CG364 :"N:\373\controller\hdl\read.v":3:7:3:10|Synthesizing module read
-@N: CL177 :"N:\373\controller\hdl\read.v":36:0:36:5|Sharing sequential element buttonData.
 @N: CG364 :"N:\373\controller\component\work\controller\controller.v":9:7:9:16|Synthesizing module controller
 

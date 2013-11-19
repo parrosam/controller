@@ -27,28 +27,28 @@ Available hyper_sources - for debug and ip models
 Finished RTL optimizations (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 102MB peak: 103MB)
 
 @N: MF238 :"n:\373\controller\hdl\poll.v":19:12:19:21|Found 20-bit incrementor, 'count_2[19:0]'
-@N:"n:\373\controller\hdl\read.v":36:0:36:5|Found counter in view:work.read(verilog) inst buttonCount[7:0]
-@N:"n:\373\controller\hdl\read.v":36:0:36:5|Found counter in view:work.read(verilog) inst count[20:0]
+@N:"n:\373\controller\hdl\read.v":34:0:34:5|Found counter in view:work.read(verilog) inst buttonCount[7:0]
+@N:"n:\373\controller\hdl\read.v":34:0:34:5|Found counter in view:work.read(verilog) inst count[20:0]
 
-Finished factoring (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 106MB peak: 106MB)
+Finished factoring (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 106MB peak: 107MB)
 
 
 Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 104MB peak: 107MB)
 
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 105MB peak: 107MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:00s; Memory used current: 106MB peak: 107MB)
 
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 105MB peak: 107MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:00s; Memory used current: 106MB peak: 107MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 107MB peak: 107MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 108MB peak: 109MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 106MB peak: 107MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 108MB peak: 109MB)
 
 
-Finished preparing to map (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 106MB peak: 107MB)
+Finished preparing to map (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 107MB peak: 109MB)
 
 
 High Fanout Net Report
@@ -57,8 +57,8 @@ High Fanout Net Report
 Driver Instance / Pin Name                    Fanout, notes
 -----------------------------------------------------------
 controller_MSS_0.MSS_ADLIB_INST / MSSPSEL     28           
-read_0.dataSync[0] / Q                        29           
 pollSignal_0.read / Q                         33           
+read_0.dataSync[0] / Q                        30           
 CoreAPB3_0.CAPB3O0OI_3[0] / Y                 28           
 ===========================================================
 
@@ -66,11 +66,11 @@ CoreAPB3_0.CAPB3O0OI_3[0] / Y                 28
 Finished technology mapping (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 112MB peak: 113MB)
 
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 113MB peak: 115MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:01s; Memory used current: 113MB peak: 115MB)
 
 Replicating Combinational Instance CoreAPB3_0.CAPB3O0OI_3[0], fanout 28 segments 2
+Replicating Sequential Instance read_0.dataSync[0], fanout 30 segments 2
 Replicating Sequential Instance pollSignal_0.read, fanout 33 segments 2
-Replicating Sequential Instance read_0.dataSync[0], fanout 29 segments 2
 Buffering controller_MSS_0_MSS_MASTER_APB_0_PSELx, fanout 28 segments 2
 
 Added 1 Buffers
@@ -78,21 +78,21 @@ Added 3 Cells via replication
 	Added 2 Sequential Cells via replication
 	Added 1 Combinational Cells via replication
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 113MB peak: 115MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:01s; Memory used current: 113MB peak: 115MB)
 
 
 
 #### START OF CLOCK OPTIMIZATION REPORT #####[
 
 Clock optimization not enabled
-1 non-gated/non-generated clock tree(s) driving 113 clock pin(s) of sequential element(s)
+1 non-gated/non-generated clock tree(s) driving 112 clock pin(s) of sequential element(s)
 0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
 0 instances converted, 0 sequential instances remain driven by gated/generated clocks
 
 ============================ Non-Gated/Non-Generated Clocks =============================
 Clock Tree ID     Driving Element      Drive Element Type     Fanout     Sample Instance 
 -----------------------------------------------------------------------------------------
-@K:CKID0001       controller_MSS_0     hierarchy              113        read_0.count[10]
+@K:CKID0001       controller_MSS_0     hierarchy              112        read_0.count[20]
 =========================================================================================
 ===== Gated/Generated Clocks =====
 ************** None **************
@@ -104,19 +104,19 @@ Clock Tree ID     Driving Element      Drive Element Type     Fanout     Sample 
 
 Writing Analyst data base N:\373\controller\synthesis\controller.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 112MB peak: 115MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:02s; Memory used current: 113MB peak: 115MB)
 
 Writing EDIF Netlist and constraint files
 G-2012.09M-SP1 
 
-Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:01s; Memory used current: 113MB peak: 115MB)
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:02s; Memory used current: 113MB peak: 115MB)
 
 Found clock FAB_CLK with period 10.00ns 
 Found clock FCLK with period 10.00ns 
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Mon Nov 18 18:41:50 2013
+# Timing Report written on Tue Nov 19 16:43:31 2013
 #
 
 
@@ -161,7 +161,7 @@ Clocks             |    rise  to  rise    |    fall  to  fall   |    rise  to  f
 Starting  Ending   |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
 ----------------------------------------------------------------------------------------------------------
 System    System   |  10.000      5.189   |  No paths    -      |  No paths    -      |  No paths    -    
-FAB_CLK   System   |  10.000      8.225   |  No paths    -      |  No paths    -      |  No paths    -    
+FAB_CLK   System   |  10.000      8.280   |  No paths    -      |  No paths    -      |  No paths    -    
 FAB_CLK   FAB_CLK  |  10.000      -0.722  |  No paths    -      |  No paths    -      |  No paths    -    
 ==========================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
@@ -192,13 +192,13 @@ Instance                   Reference     Type     Pin     Net           Time    
 pollSignal_0.count[6]      FAB_CLK       DFN1     Q       count[6]      0.627       -0.722
 pollSignal_0.count[12]     FAB_CLK       DFN1     Q       count[12]     0.627       -0.437
 pollSignal_0.count[3]      FAB_CLK       DFN1     Q       count[3]      0.627       -0.431
+read_0.count[0]            FAB_CLK       DFN1     Q       un5lto0       0.627       -0.354
 pollSignal_0.count[2]      FAB_CLK       DFN1     Q       count[2]      0.627       -0.344
+read_0.count[1]            FAB_CLK       DFN1     Q       un5lto1       0.627       -0.324
 pollSignal_0.count[9]      FAB_CLK       DFN1     Q       count[9]      0.494       -0.292
+read_0.count[2]            FAB_CLK       DFN1     Q       count[2]      0.627       -0.284
 pollSignal_0.count[4]      FAB_CLK       DFN1     Q       count[4]      0.627       -0.247
 pollSignal_0.count[10]     FAB_CLK       DFN1     Q       count[10]     0.627       -0.187
-read_0.count[9]            FAB_CLK       DFN1     Q       count[9]      0.494       -0.114
-pollSignal_0.count[7]      FAB_CLK       DFN1     Q       count[7]      0.627       -0.089
-pollSignal_0.count[8]      FAB_CLK       DFN1     Q       count[8]      0.627       -0.057
 ==========================================================================================
 
 
@@ -212,13 +212,13 @@ Instance                    Reference     Type       Pin     Net                
 pollSignal_0.pollSignal     FAB_CLK       DFN1E0     D       N_123               9.542        -0.722
 pollSignal_0.read           FAB_CLK       DFN1       D       N_26                9.542        -0.437
 pollSignal_0.read_0         FAB_CLK       DFN1       D       N_26                9.542        -0.437
-read_0.D_Up                 FAB_CLK       DFN1E1     E       D_Up_1_sqmuxa       9.482        -0.114
-read_0.Joystick_X[1]        FAB_CLK       DFN1E1     E       N_488               9.482        -0.114
-read_0.Joystick_X[2]        FAB_CLK       DFN1E1     E       N_489               9.482        -0.114
-read_0.Joystick_X[4]        FAB_CLK       DFN1E1     E       N_491               9.482        -0.114
-read_0.X                    FAB_CLK       DFN1E1     E       X_1_sqmuxa          9.482        -0.114
-read_0.B                    FAB_CLK       DFN1E1     E       B_1_sqmuxa          9.482        -0.103
-read_0.D_Left               FAB_CLK       DFN1E1     E       D_Left_1_sqmuxa     9.482        -0.103
+read_0.count[20]            FAB_CLK       DFN1       D       count_e20           9.512        -0.354
+read_0.B                    FAB_CLK       DFN1E1     E       B_1_sqmuxa          9.630        -0.092
+read_0.X                    FAB_CLK       DFN1E1     E       X_1_sqmuxa          9.630        -0.092
+read_0.Y                    FAB_CLK       DFN1E1     E       Y_1_sqmuxa          9.630        -0.092
+read_0.A                    FAB_CLK       DFN1E1     E       A_1_sqmuxa          9.630        -0.091
+read_0.D_Down               FAB_CLK       DFN1E1     E       D_Down_1_sqmuxa     9.630        -0.057
+read_0.D_Left               FAB_CLK       DFN1E1     E       D_Left_1_sqmuxa     9.630        -0.057
 ====================================================================================================
 
 
@@ -311,8 +311,8 @@ N_280                               Net       -        -       1.512     -      
 pollSignal_0.read_RNIO3A15          NOR2A     A        In      -         8.204       -         
 pollSignal_0.read_RNIO3A15          NOR2A     Y        Out     0.534     8.738       -         
 N_237                               Net       -        -       0.274     -           1         
-pollSignal_0.read_RNIDIHEF          NOR3      C        In      -         9.011       -         
-pollSignal_0.read_RNIDIHEF          NOR3      Y        Out     0.639     9.650       -         
+pollSignal_0.read_RNISH7JF          NOR3      C        In      -         9.011       -         
+pollSignal_0.read_RNISH7JF          NOR3      Y        Out     0.639     9.650       -         
 N_26                                Net       -        -       0.328     -           2         
 pollSignal_0.read                   DFN1      D        In      -         9.978       -         
 ===============================================================================================
@@ -356,8 +356,8 @@ N_280                               Net       -        -       1.512     -      
 pollSignal_0.read_RNIO3A15          NOR2A     A        In      -         8.204       -         
 pollSignal_0.read_RNIO3A15          NOR2A     Y        Out     0.534     8.738       -         
 N_237                               Net       -        -       0.274     -           1         
-pollSignal_0.read_RNIDIHEF          NOR3      C        In      -         9.011       -         
-pollSignal_0.read_RNIDIHEF          NOR3      Y        Out     0.639     9.650       -         
+pollSignal_0.read_RNISH7JF          NOR3      C        In      -         9.011       -         
+pollSignal_0.read_RNISH7JF          NOR3      Y        Out     0.639     9.650       -         
 N_26                                Net       -        -       0.328     -           2         
 pollSignal_0.read_0                 DFN1      D        In      -         9.978       -         
 ===============================================================================================
@@ -422,48 +422,45 @@ Path information for path number 5:
     + Clock delay at ending point:           0.000 (ideal)
     = Required time:                         9.512
 
-    - Propagation time:                      9.856
+    - Propagation time:                      9.866
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 -0.344
+    = Slack (non-critical) :                 -0.354
 
-    Number of logic level(s):                8
-    Starting point:                          pollSignal_0.count[2] / Q
-    Ending point:                            pollSignal_0.pollSignal / D
+    Number of logic level(s):                7
+    Starting point:                          read_0.count[0] / Q
+    Ending point:                            read_0.count[20] / D
     The start point is clocked by            FAB_CLK [rising] on pin CLK
     The end   point is clocked by            FAB_CLK [rising] on pin CLK
 
-Instance / Net                                 Pin      Pin               Arrival     No. of    
-Name                                Type       Name     Dir     Delay     Time        Fan Out(s)
-------------------------------------------------------------------------------------------------
-pollSignal_0.count[2]               DFN1       Q        Out     0.627     0.627       -         
-count[2]                            Net        -        -       1.211     -           6         
-pollSignal_0.count_RNIBJK2[2]       OR2B       B        In      -         1.838       -         
-pollSignal_0.count_RNIBJK2[2]       OR2B       Y        Out     0.534     2.372       -         
-N_53                                Net        -        -       1.211     -           6         
-pollSignal_0.count_RNIIUU3[4]       OR2A       B        In      -         3.583       -         
-pollSignal_0.count_RNIIUU3[4]       OR2A       Y        Out     0.438     4.021       -         
-N_90                                Net        -        -       0.686     -           3         
-pollSignal_0.count_RNI3OJ6_0[4]     OR2A       A        In      -         4.707       -         
-pollSignal_0.count_RNI3OJ6_0[4]     OR2A       Y        Out     0.457     5.165       -         
-N_173                               Net        -        -       0.328     -           2         
-pollSignal_0.pollSignal_RNO_68      AOI1B      A        In      -         5.493       -         
-pollSignal_0.pollSignal_RNO_68      AOI1B      Y        Out     0.794     6.287       -         
-un1_read6_1_i_0_0_a11_0             Net        -        -       0.274     -           1         
-pollSignal_0.pollSignal_RNO_29      OR3        C        In      -         6.561       -         
-pollSignal_0.pollSignal_RNO_29      OR3        Y        Out     0.581     7.142       -         
-un1_read6_1_i_0_0_1_tz              Net        -        -       0.274     -           1         
-pollSignal_0.pollSignal_RNO_10      OA1        B        In      -         7.415       -         
-pollSignal_0.pollSignal_RNO_10      OA1        Y        Out     0.768     8.183       -         
-un1_read6_1_i_0_0_2                 Net        -        -       0.274     -           1         
-pollSignal_0.pollSignal_RNO_2       OR2        B        In      -         8.457       -         
-pollSignal_0.pollSignal_RNO_2       OR2        Y        Out     0.438     8.894       -         
-un1_read6_1_i_0_0_4                 Net        -        -       0.274     -           1         
-pollSignal_0.pollSignal_RNO         AOI1       C        In      -         9.168       -         
-pollSignal_0.pollSignal_RNO         AOI1       Y        Out     0.414     9.582       -         
-N_123                               Net        -        -       0.274     -           1         
-pollSignal_0.pollSignal             DFN1E0     D        In      -         9.856       -         
-================================================================================================
-Total path delay (propagation time + setup) of 10.344 is 5.538(53.5%) logic and 4.805(46.5%) route.
+Instance / Net                          Pin      Pin               Arrival     No. of    
+Name                          Type      Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------
+read_0.count[0]               DFN1      Q        Out     0.627     0.627       -         
+un5lto0                       Net       -        -       1.007     -           4         
+read_0.count_RNI1S82[0]       OR3C      C        In      -         1.634       -         
+read_0.count_RNI1S82[0]       OR3C      Y        Out     0.546     2.180       -         
+N_119                         Net       -        -       1.007     -           4         
+read_0.count_RNISJP3[4]       OR2       B        In      -         3.187       -         
+read_0.count_RNISJP3[4]       OR2       Y        Out     0.438     3.625       -         
+N_121                         Net       -        -       1.007     -           4         
+read_0.count_RNI3BLB1[6]      NOR3B     C        In      -         4.632       -         
+read_0.count_RNI3BLB1[6]      NOR3B     Y        Out     0.306     4.938       -         
+count_N_13_mux                Net       -        -       1.420     -           9         
+read_0.count_RNI8MNO2[16]     NOR2B     B        In      -         6.358       -         
+read_0.count_RNI8MNO2[16]     NOR2B     Y        Out     0.534     6.892       -         
+count_N_5_mux_0_0             Net       -        -       0.686     -           3         
+read_0.count_RNO_1[20]        NOR2B     B        In      -         7.578       -         
+read_0.count_RNO_1[20]        NOR2B     Y        Out     0.534     8.112       -         
+count_e20_0_0_a2_1_1          Net       -        -       0.274     -           1         
+read_0.count_RNO_0[20]        AO1       A        In      -         8.386       -         
+read_0.count_RNO_0[20]        AO1       Y        Out     0.395     8.780       -         
+count_e20_0_0_0               Net       -        -       0.274     -           1         
+read_0.count_RNO[20]          AO1       C        In      -         9.054       -         
+read_0.count_RNO[20]          AO1       Y        Out     0.538     9.592       -         
+count_e20                     Net       -        -       0.274     -           1         
+read_0.count[20]              DFN1      D        In      -         9.866       -         
+=========================================================================================
+Total path delay (propagation time + setup) of 10.354 is 4.405(42.5%) logic and 5.949(57.5%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
@@ -561,78 +558,77 @@ Report for cell controller.verilog
               cell count     area count*area
               AND2     5      1.0        5.0
               AND3    24      1.0       24.0
-               AO1     5      1.0        5.0
+               AO1    10      1.0       10.0
               AO16     1      1.0        1.0
-              AO1A     3      1.0        3.0
+              AO1A     5      1.0        5.0
               AO1B     3      1.0        3.0
               AO1C     1      1.0        1.0
-              AO1D     1      1.0        1.0
+              AO1D     2      1.0        2.0
               AOI1     6      1.0        6.0
-             AOI1B     2      1.0        2.0
-               AX1     1      1.0        1.0
-              AX1C     1      1.0        1.0
+             AOI1B     4      1.0        4.0
+              AX1A     2      1.0        2.0
               AX1E     1      1.0        1.0
+             AXOI4     1      1.0        1.0
              AXOI5     1      1.0        1.0
               BUFF     1      1.0        1.0
                GND     7      0.0        0.0
            MSS_APB     1      0.0        0.0
            MSS_CCC     1      0.0        0.0
                MX2     1      1.0        1.0
-              NOR2    18      1.0       18.0
-             NOR2A    56      1.0       56.0
-             NOR2B    49      1.0       49.0
+              MX2C     1      1.0        1.0
+              NOR2    19      1.0       19.0
+             NOR2A    58      1.0       58.0
+             NOR2B    36      1.0       36.0
               NOR3    12      1.0       12.0
-             NOR3A    25      1.0       25.0
-             NOR3B    30      1.0       30.0
-             NOR3C    70      1.0       70.0
-               OA1     4      1.0        4.0
-              OA1A     4      1.0        4.0
+             NOR3A    32      1.0       32.0
+             NOR3B    38      1.0       38.0
+             NOR3C    87      1.0       87.0
+               OA1     3      1.0        3.0
+              OA1A     5      1.0        5.0
               OA1B     1      1.0        1.0
-              OA1C     7      1.0        7.0
-              OAI1     5      1.0        5.0
-               OR2    14      1.0       14.0
-              OR2A    12      1.0       12.0
+              OA1C     6      1.0        6.0
+              OAI1     6      1.0        6.0
+               OR2    10      1.0       10.0
+              OR2A    10      1.0       10.0
               OR2B    12      1.0       12.0
-               OR3     7      1.0        7.0
-              OR3A     3      1.0        3.0
+               OR3    15      1.0       15.0
+              OR3A     1      1.0        1.0
               OR3B     3      1.0        3.0
-              OR3C     1      1.0        1.0
+              OR3C     3      1.0        3.0
              RCOSC     1      0.0        0.0
                VCC     7      0.0        0.0
-              XA1B     9      1.0        9.0
-              XA1C     4      1.0        4.0
+              XA1B     1      1.0        1.0
+              XA1C     3      1.0        3.0
               XOR2    19      1.0       19.0
 
 
-              DFN1    71      1.0       71.0
+              DFN1    83      1.0       83.0
             DFN1E0     1      1.0        1.0
-            DFN1E1    41      1.0       41.0
+            DFN1E1    28      1.0       28.0
                    -----          ----------
-             TOTAL   552               535.0
+             TOTAL   578               561.0
 
 
   IO Cell usage:
               cell count
-             INBUF     1
+             BIBUF     1
          INBUF_MSS     1
-            OUTBUF     7
         OUTBUF_MSS     1
-           TRIBUFF     1
                    -----
-             TOTAL    11
+             TOTAL     3
 
 
-Core Cells         : 535 of 4608 (12%)
-IO Cells           : 11
+Core Cells         : 561 of 4608 (12%)
+IO Cells           : 3
 
   RAM/ROM Usage Summary
 Block Rams : 0 of 8 (0%)
 
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:01s; Memory used current: 40MB peak: 115MB)
+At Mapper Exit (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:02s; Memory used current: 40MB peak: 115MB)
 
-Process took 0h:00m:04s realtime, 0h:00m:01s cputime
-# Mon Nov 18 18:41:51 2013
+Process took 0h:00m:06s realtime, 0h:00m:02s cputime
+# Tue Nov 19 16:43:32 2013
 
 ###########################################################]

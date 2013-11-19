@@ -1,7 +1,7 @@
 // pollSignal.v
 module pollSignal(
 	input PCLK,
-	output wire poll,
+	inout poll,
 	output reg read
 );
 	reg[20:0] count;

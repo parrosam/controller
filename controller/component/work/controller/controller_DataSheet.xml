@@ -12,7 +12,7 @@
     <project-description>
     </project-description>
     <location>N:/373/controller/component/work/controller</location>
-    <state>GENERATED ( Mon Nov 18 18:39:51 2013 )</state>
+    <state>GENERATED ( Tue Nov 19 16:42:05 2013 )</state>
     <swide-toolchain>SoftConsole workspace generated to N:\373\controller\SoftConsole</swide-toolchain>
   </project-settings>
   <site-map>
@@ -33,71 +33,23 @@
   </fileset>
   <fileset>
     <name>Flash Memory File(s)</name>
-    <file>N:\373\controller\component\work\N:/373/controller/component/work/controller_MSS/MSS_ENVM_0/MSS_ENVM_0.efc</file>
+    <file>N:\373\controller\component\work\./MSS_ENVM_0/MSS_ENVM_0.efc</file>
   </fileset>
   <io>
-    <port-name>buttonData[4]</port-name>
-    <direction>OUT</direction>
+    <port-name>UART_0_RXD</port-name>
+    <direction>IN</direction>
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>
   </io>
   <io>
-    <port-name>poll</port-name>
-    <direction>OUT</direction>
+    <port-name>data</port-name>
+    <direction>INOUT</direction>
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>
   </io>
   <io>
     <port-name>UART_0_TXD</port-name>
     <direction>OUT</direction>
-    <pin-number>-</pin-number>
-    <io-standard>LVTTL</io-standard>
-  </io>
-  <io>
-    <port-name>buttonData[1]</port-name>
-    <direction>OUT</direction>
-    <pin-number>-</pin-number>
-    <io-standard>LVTTL</io-standard>
-  </io>
-  <io>
-    <port-name>buttonData[2]</port-name>
-    <direction>OUT</direction>
-    <pin-number>-</pin-number>
-    <io-standard>LVTTL</io-standard>
-  </io>
-  <io>
-    <port-name>ready</port-name>
-    <direction>OUT</direction>
-    <pin-number>-</pin-number>
-    <io-standard>LVTTL</io-standard>
-  </io>
-  <io>
-    <port-name>buttonData[3]</port-name>
-    <direction>OUT</direction>
-    <pin-number>-</pin-number>
-    <io-standard>LVTTL</io-standard>
-  </io>
-  <io>
-    <port-name>sample</port-name>
-    <direction>OUT</direction>
-    <pin-number>-</pin-number>
-    <io-standard>LVTTL</io-standard>
-  </io>
-  <io>
-    <port-name>data</port-name>
-    <direction>IN</direction>
-    <pin-number>-</pin-number>
-    <io-standard>LVTTL</io-standard>
-  </io>
-  <io>
-    <port-name>buttonData[0]</port-name>
-    <direction>OUT</direction>
-    <pin-number>-</pin-number>
-    <io-standard>LVTTL</io-standard>
-  </io>
-  <io>
-    <port-name>UART_0_RXD</port-name>
-    <direction>IN</direction>
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>
   </io>

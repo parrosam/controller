@@ -5,7 +5,7 @@ Release: v11.0
 Software Version: 11.0.0.23
 PDB file 'N:\373\controller\designer\impl1\controller_fp\controller.pdb' has been loaded
 successfully.
-DESIGN : controller;  CHECKSUM : AD03;  PDB_VERSION : 1.8
+DESIGN : controller;  CHECKSUM : 282F;  PDB_VERSION : 1.8
 Driver : 3.0.0 build 1
 programmer '78180' : FlashPro3
 Opened 'N:/373/controller/designer/impl1/controller_fp/controller.pro'
@@ -18,7 +18,7 @@ Info: Adding Flash Memory data from file
 Info: Adding FPGA Array data from file N:\373\controller\designer\impl1\controller.fdb.
 PDB file 'N:\373\controller\designer\impl1\controller_fp\controller.pdb' has been loaded
 successfully.
-DESIGN : controller;  CHECKSUM : 9647;  PDB_VERSION : 1.8
+DESIGN : controller;  CHECKSUM : 0C63;  PDB_VERSION : 1.8
 The 'update_programming_file' command succeeded.
 The 'set_programming_action' command succeeded.
 programmer '78180' : Scan Chain...
@@ -29,13 +29,13 @@ programmer '78180' : Executing action PROGRAM
 programmer '78180' : EXPORT FSN[48] = 0114ab289048
 programmer '78180' : Erase ...
 programmer '78180' : Completed erase
-programmer '78180' : EXPORT CHECKSUM: [16] = 9647
+programmer '78180' : EXPORT CHECKSUM: [16] = 0c63
 programmer '78180' : Programming FPGA Array
 programmer '78180' : Verifying FPGA Array
 programmer '78180' :         Verifying FPGA Array -- pass
 programmer '78180' : Program System Init and Boot Clients...
 programmer '78180' : Verify System Init and Boot Clients...
-programmer '78180' : Finished: Mon Nov 18 18:44:05 2013 (Elapsed time 00:00:37)
+programmer '78180' : Finished: Tue Nov 19 16:46:28 2013 (Elapsed time 00:00:36)
 programmer '78180' : Executing action PROGRAM PASSED.
 
                         o - o - o - o - o - o

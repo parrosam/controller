@@ -16,9 +16,7 @@ module read(
 
 	//MODULE I/O
 	input ready,
-	input data, 
-	output reg [4:0]buttonData,
-	output reg sample
+	inout data
 );
 
 assign PSLVERR = 0; //assumes no error generation 
@@ -35,11 +33,6 @@ reg [1:0] dataSync;	//Synchronizes data input
 //Associate each button with correct negedge
 always @(posedge PCLK)
 begin
-	buttonData[4] <= Start;
-	buttonData[3] <= Y;
-	buttonData[2] <= X;
-	buttonData[1] <= B;
-	buttonData[0] <= A;
 
 	//Bit assignment matches order in section "Polling the Controller for Joystick/Button Data" at http://www.int03.co.uk/crema/hardware/gamecube/gc-control.html
 	
@@ -82,8 +75,6 @@ begin
 
 		if(count >= 190 && count <= 210)		//Sample in the middle (count goes up to 400)
 		begin
-			sample <= 1;
-
 			if(buttonCount == 3)
 				Start <= dataSync[0];
 			else if(buttonCount == 4)
@@ -141,24 +132,7 @@ begin
 			else if(buttonCount == 31)
 				Joystick_Y[0] <= dataSync[0];
 		end
-		else
-		begin
-			sample <= 0;
-		end
 	end
 end
-
-//reg countReset;
-////Count each negedge after poll command has been sent
-//always @(negedge data)
-//begin		
-//	countReset <= 0;
-//	if(ready)
-//		buttonCount <= buttonCount + 1;
-//	else
-//		buttonCount <= 0;
-//end
-//
-
 
 endmodule

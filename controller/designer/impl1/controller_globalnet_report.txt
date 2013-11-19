@@ -5,7 +5,7 @@
 Product: Designer
 Release: v11.0
 Version: 11.0.0.23
-Date: Mon Nov 18 18:42:36 2013
+Date: Tue Nov 19 16:44:28 2013
 Design Name: controller  Family: SmartFusion  Die: A2F200M3F  Package: 484 FBGA
 
 
@@ -20,7 +20,7 @@ Global Nets Information:
         |-----------------------------------------------------|
         |Name                |Core      |IO        |RAM       |
         |-----------------------------------------------------|
-        |FAB_CLK             |      113 |        0 |        0 |
+        |FAB_CLK             |      112 |        0 |        0 |
         |-----------------------------------------------------|
 
 Summary of Global Net Placement:
